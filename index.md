@@ -1,12 +1,12 @@
 ---
-layout: landing
+title: Homepage
 about_cta_link: "/team"
 about_cta_text: learn more about us
 about_paragraph: 'Our aim is to provide an innovative, inspiring, and laid back environment
   for businesses of all shapes and sizes to learn, grow, and flourish.
 
 '
-banner_text: ''
+banner_text: 
 clients:
 - image: http://lh3.googleusercontent.com/CRjMVC1KK4LuaL80lCwLi-0_S8hDCErmB48NMIeIAgqPRM9Vb7TeV2F5WfeDg_ypm7_idPsOLLntI7x5iFYFCXfuj4bP
   link: http://www.axastartupcenter.de/
@@ -67,7 +67,7 @@ clients_testimonials:
     auctor urna vehicula nec. Duis et mi consectetur.
 
 '
-create_date: '2016-12-26T12:27:00+01:00'
+create_date: 2016-12-26 12:27:00 +01:00
 events_jumbotron_background: http://lh3.googleusercontent.com/HQsAMGwv8Fge8r9tSOIQtjm9ZGuCz0pfPrJfwZkd2Y9kc6SdoF9ehDmX0GBiP0agjGoCg6L2ktAXr9bVcSltyz2rl-5A
 events_jumbotron_cta_link: https://factorycampus.typeform.com/to/LyDULG
 events_jumbotron_cta_text: Host your event
@@ -95,10 +95,10 @@ hero_background: http://lh3.googleusercontent.com/cO9US0KgjQqe6tb1ceysM0QhcSVxUo
 hero_tagline: |-
   renovating
   the workspace
-last_updated: '2017-01-02T18:58:00+01:00'
+last_updated: 2017-01-02 18:58:00 +01:00
 name: Factory Campus
 pp_columns:
-- cta_link: ''
+- cta_link: 
   cta_text: learn more
   description: |-
     Access to any open desk in the co-working area or a dedicated desk of your own..
@@ -143,6 +143,7 @@ pr_jumbotron_title: project rooms
 pr_section_heading: project rooms
 preview_url: c3f3b362-ab68-50b9-d0d8-4376a9c25305
 stories_section_heading: thoughts & ideas
+layout: landing
 ---
 
 Hallo Welt!
