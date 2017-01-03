@@ -1,0 +1,36 @@
+// ====================================================================
+// ==  @partners-nav  ==
+// ====================================================================
+
+.partners-nav
+  .list
+    text-align: center
+
+    .item
+      display: inline-block
+      padding-left: $base-margin / 2
+      padding-right: $base-margin / 2
+      +trans()
+
+      &:last-child
+        margin-right: 0
+      // end-last
+
+      .logo
+        display: inline-block
+        width: em(150)
+        height: em(70)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+      // end-logo
+    // end-item
+
+    &:hover
+      .item
+        opacity: .3
+
+        &:hover
+          opacity: 1
+  // end-list
+// end-partners-nav

@@ -1,0 +1,71 @@
+// ====================================================================
+// ==  @payment-nav  ==
+// ====================================================================
+
+.payment-nav
+  .title
+    margin-bottom: $base-margin / 2
+  // end-title
+
+  .list
+    .item
+      display: inline-block
+      margin-right: $base-margin / 2
+      vertical-align: middle
+
+      &:last-child
+        margin-right: 0
+      // end-last
+
+      a
+        background-color: $light
+        padding-left: $base-margin / 2
+        padding-right: $base-margin / 2
+        height: em(60)
+        line-height: em(60)
+        border-radius: $radius-lg
+        text-decoration: none
+        display: block
+        +shadow-box()
+
+        &.has-logo
+          padding-left: $base-margin
+          padding-right: $base-margin
+        // end-has-logo
+
+        .icon
+          margin-right: em(15)
+          vertical-align: middle
+
+          &.card
+            display: inline-block
+            +size(em(30) em(20))
+            background-image: url('../images/icons/icon-card.svg')
+          // end-card
+        // end-icon
+
+        .logo
+          display: block
+          +size(em(100) em(25))
+          background-position: center
+          background-repeat: no-repeat
+          background-size: contain
+          position: relative
+          +center(y)
+
+          &.paypal
+            background-image: url('../assets/images/logo-paypal.svg')
+          // end-paypal
+
+          &.sofort
+            background-image: url('../assets/images/logo-sofort.svg')
+          // end-sofort
+
+          &.sepa
+            background-image: url('../assets/images/logo-sepa.svg')
+          // end-sepa
+        // end-icon
+      // end-a
+    // end-item
+  // end-list
+// end-payment-nav

@@ -1,0 +1,50 @@
+// ====================================================================
+// ==  @auth-social  ==
+// ====================================================================
+
+.auth-social
+  padding-left: $base-margin / 2
+  padding-right: $base-margin / 2
+
+  .list
+    .item
+      text-align: left
+      margin-bottom: em(4)
+
+      a
+        color: $light
+        font-size: em(16)
+      // end-a
+
+      &.linkedin
+        a
+          background-color: $linkedin-c
+
+          &:hover
+            background-color: darken($linkedin-c, 10)
+          // end-hover
+        // end-a
+      // end-linkedin
+
+      &.google
+        a
+          background-color: $google-c
+
+          &:hover
+            background-color: darken($google-c, 10)
+          // end-hover
+        // end-a
+      // end-google
+
+      &.xing
+        a
+          background-color: $xing-c
+
+          &:hover
+            background-color: darken($xing-c, 10)
+          // end-hover
+        // end-a
+      // end-xing
+    // end-item
+  // end-list
+// end-auth-social

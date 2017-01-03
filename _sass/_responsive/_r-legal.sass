@@ -1,0 +1,42 @@
+// ====================================================================
+// ==  @r-legal  ==
+// ====================================================================
+
+// ==  $lg  ==
++media($bp-lg)
+// end-lg
+
+// ==  $md  ==
++media($bp-md)
+  .g-legal
+    // ==  $data-protection  ==
+    .data-protection-container
+      .col-sidebar
+        +span-columns(12)
+      // end-col
+
+      .col-page
+        +span-columns(12)
+      // end-col
+    // end-container
+  // end-g-legal
+
+  .l-legal
+    // ==  $page-main  ==
+    .page-main
+      .page-section
+        .sidebar
+          display: none
+        // end-sidebar
+      // end-page-section
+    // end-page-main
+  // end-l-legal
+// end-md
+
+// ==  $sm  ==
++media($bp-sm)
+// end-sm
+
+// ==  $xs  ==
++media($bp-xs)
+// end-xs

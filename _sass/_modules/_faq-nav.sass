@@ -1,0 +1,171 @@
+// ====================================================================
+// ==  @faq-nav  ==
+// ====================================================================
+
+// ==  $reusable-class-names  ==
+.specific
+  padding-top: $base-margin
+  padding-bottom: $base-margin
+
+  .text
+    margin-bottom: $base-margin / 2
+
+    &:last-child
+      margin-bottom: 0
+    // end-last
+
+    a
+      color: $green
+      display: block
+      +trans()
+
+      &:hover
+        color: $dark
+      // end-hover
+    // end-a
+
+    .or
+      display: block
+      margin-top: $base-margin / 4
+      margin-bottom: $base-margin / 4
+    // end-or
+  // end-text
+// end-specific
+// end-reusable-class-names
+
+.faq-nav
+  .list
+    .item
+      text-align: center
+      margin-bottom: $base-margin / 2
+      border: 1px solid $light-gray
+      border-radius: $radius-lg
+      padding: $base-margin / 2
+      cursor: pointer
+      +trans()
+
+      &:hover
+        border-color: $green
+      // end-hover
+
+      .header
+        margin-bottom: em(10)
+
+        .head
+          margin-bottom: $base-margin / 2
+
+          .icon
+            display: inline-block
+            +size(em(45))
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+
+            &.start
+              background-image: url('../images/icons/icon-shapes.svg')
+            // end-start
+
+            &.membership
+              background-image: url('../images/icons/icon-card.svg')
+            // end-membership
+
+            &.spaces
+              background-image: url('../images/icons/icon-lamp.svg')
+            // end-spaces
+
+            &.reservation
+              background-image: url('../images/icons/icon-calendar.svg')
+            // end-reservation
+
+            &.billing
+              background-image: url('../images/icons/icon-bitcoin.svg')
+            // end-billing
+
+            &.account
+              background-image: url('../images/icons/icon-window.svg')
+            // end-account
+
+            &.events
+              background-image: url('../images/icons/icon-frame.svg')
+            // end-events
+          // end-icon
+        // end-head
+
+        .title
+          text-transform: capitalize
+        // end-title
+      // end-header
+
+      .questions
+        margin-bottom: $base-margin / 2
+
+        .question
+          font-size: em(14)
+          margin-bottom: rem(5)
+          color: $gray
+
+          &:last-child
+            margin-bottom: 0
+          // end-last
+        // end-question
+      // end-questions
+
+      .footer
+        a
+          font-weight: 700
+        // end-a
+      // end-footer
+
+      &.specific
+        @extend .specific
+      // end-specific
+    // end-item
+  // end-list
+// end-faq-nav
+
+.faq-more-nav
+  text-align: left
+
+  .list
+    .item
+      margin-bottom: em(10)
+
+      &:last-child
+        margin-bottom: 0
+      // end-last
+
+      a
+        text-transform: capitalize
+        font-family: $oswald
+        font-weight: 300
+        letter-spacing: 1px
+        +trans()
+
+        &:hover
+          color: $green
+        // end-hover
+      // end-a
+
+      &.active
+        a
+          color: $green
+        // end-a
+      // end-active
+
+      &.specific
+        @extend .specific
+        text-align: center
+        border: 1px solid $light-gray
+        border-radius: $radius-lg
+        padding: $base-margin / 2
+        margin-top: $base-margin / 2
+
+        a
+          font-family: $lato
+          font-weight: 400
+          letter-spacing: normal
+        // end-a
+      // end-specific
+    // end-item
+  // end-list
+// end-more-nav

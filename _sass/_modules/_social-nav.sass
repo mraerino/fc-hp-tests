@@ -1,0 +1,39 @@
+// ====================================================================
+// ==  @social-nav  ==
+// ====================================================================
+
+.social-nav
+  .list
+    .item
+      display: inline-block
+      margin-right: $base-margin / 2
+
+      &:last-child
+        margin-right: 0
+      // end-last
+
+      a
+        color: $light
+        font-size: em(24)
+        +shadow-text()
+        +trans()
+
+        &:hover
+          color: $green
+        // end-hover
+      // end-a
+    // end-item
+  // end-list
+
+  &.orange
+    .list
+      .item
+        a
+          &:hover
+            color: $orange
+          // end-hover
+        // end-a
+      // end-item
+    // end-list
+  // end-orange
+// end-social-nav

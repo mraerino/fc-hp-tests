@@ -1,0 +1,61 @@
+// ====================================================================
+// ==  @modal  ==
+// ====================================================================
+
+.modal
+  position: fixed
+  height: 100vh
+  width: 100%
+  top: 0
+  left: 0
+  z-index: 9999
+  +animation(fade $trans-time $ease-out-quad)
+
+  .overlay
+    background-color: rgba(0, 0, 0, .5)
+    overflow-y: auto
+    +size(100%)
+    padding: $base-margin / 2
+
+    .popup
+      background-color: $light
+      border-radius: $radius-lg
+      padding-top: $base-margin
+      padding-bottom: $base-margin
+
+      .header
+        margin-bottom: $base-margin / 2
+      // end-header
+
+      .intro
+        margin-bottom: $base-margin / 2
+      // end-intro
+
+      .form
+        .form-elem
+          .message
+            margin-top: 0
+            text-align: left
+            font-size: em(12)
+          // end-message
+        // end-form-elem
+      // end-form
+
+      .message
+        text-align: center
+      // end-message
+
+      &.has-iframe
+        background: none
+        +size(100%)
+        padding: 0
+        overflow: hidden
+
+        .iframe
+          border: none
+          +size(100%)
+        // end-iframe
+      // end-iframe
+    // end-popup
+  // end-overlay
+// end-modal

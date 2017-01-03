@@ -1,0 +1,62 @@
+// ====================================================================
+// ==  @grid  ==
+// ====================================================================
+
+// ==  $widths  ==
+$main-w: em(1024)
+$wide-w: em(1200)
+$full-w: 100%
+
+// ==  $containers  ==
+[class*=container]
+  padding-left: $base-margin
+  padding-right: $base-margin
+
+  .row
+    +row()
+  // end-row
+// end-containers
+
+// ==  $full-width  ==
+.full-width
+  +outer-container($full-w)
+// end-container
+
+// ==  $wide-width  ==
+.wide-width
+  +outer-container($wide-w)
+// end-container
+
+// ==  $main-width  ==
+.main-width
+  +outer-container($main-w)
+// end-container
+
+// ==  $page-header  ==
+.page-header-container
+  .col-logo
+    +span-columns(2)
+  // end-logo
+
+  .col-menu
+    +span-columns(10)
+  // end-menu
+// end-container
+
+// ==  $page-footer  ==
+.page-footer-container
+  .col-lg
+    +span-columns(8)
+  // end-col
+
+  .col-sm
+    +span-columns(4)
+  // end-sm
+// end-container
+
+// ==  $page-hero  ==
+.page-hero-container
+  .col
+    +span-columns(6)
+  // end-col
+// end-container

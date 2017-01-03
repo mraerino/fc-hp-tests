@@ -1,0 +1,63 @@
+// ====================================================================
+// ==  @jumbotron  ==
+// ====================================================================
+
+.jumbotron
+  height: em(450)
+  border-radius: $radius-lg
+  +transform(translateZ(0))
+  +fluid-bg(background)
+
+  .background
+    content: ''
+    display: block
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    +trans()
+  // end-bg
+
+  &:hover
+    .background
+      +transform(translateX(-50%) translateY(-50%) scale(1.1))
+      opacity: 0.9
+    // end-bg
+  // end-hover
+
+  .details
+    position: absolute
+    width: 50%
+    left: 0
+    bottom: 0
+    text-align: left
+    padding: $base-margin / 2
+
+    .title
+      font-size: em(38)
+      font-weight: 300
+      text-transform: uppercase
+      margin-bottom: $base-margin / 4
+      color: $light
+    // end-title
+
+    p
+      font-size: em(14)
+      line-height: rem(20)
+      letter-spacing: rem(0.8)
+      color: $light
+      margin-bottom: $base-margin / 2
+    // end-p
+
+    .button
+      font-size: em(14)
+      font-weight: 700
+      letter-spacing: rem(0.8)
+      text-transform: uppercase
+      display: inline-block
+      width: auto
+      border-radius: $radius-sm
+      padding-left: $base-margin
+      padding-right: $base-margin
+    // end-button
+  // end-details
+// end-jumbotron

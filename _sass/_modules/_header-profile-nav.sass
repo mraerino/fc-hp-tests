@@ -1,0 +1,44 @@
+// ====================================================================
+// ==  @header-profile-nav  ==
+// ====================================================================
+
+.header-profile-nav
+  .list
+    .item
+      display: inline-block
+      vertical-align: middle
+      margin-right: $base-margin / 4
+      border-radius: 50%
+      overflow: hidden
+      text-align: center
+
+      &:last-child
+        margin-right: 0
+      // end-last
+
+      &.option
+        +size(rem(20))
+        font-size: em(12)
+        line-height: rem(20)
+
+        &.notifications
+          background-color: $red
+          color: $light
+        // end-notifications
+
+        &.settings
+          background-color: $gray
+          color: $light
+        // end-settings
+      // end-option
+
+      &.photo
+        +size(em(38))
+
+        img
+          +size(100%)
+        // end-img
+      // end-photo
+    // end-item
+  // end-list
+// end-nav

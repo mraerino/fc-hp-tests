@@ -1,0 +1,75 @@
+// ====================================================================
+// ==  @l-dashboard  ==
+// ====================================================================
+
+.l-dashboard
+  // ==  $reusable-class-names  ==
+  // end-reusable-class-names
+
+  // ==  $page-header  ==
+  .page-header
+    border-bottom: 2px solid $light-gray
+
+    .header-head
+      padding-top: $base-margin / 2
+      padding-bottom: $base-margin / 2
+
+      .header-logo
+      // end-header-logo
+
+      .header-profile
+        text-align: right
+      // end-header-profile
+    // end-head
+
+    .header-menu
+    // end-menu
+  // end-page-header
+
+  // ==  $page-main  ==
+  .page-main
+    background-color: $lighter-gray
+    padding-top: $base-margin / 2
+
+    .page-title
+      margin-bottom: $base-margin
+    // end-title
+
+    .page-section
+      margin-bottom: $base-margin
+
+      &:last-child
+        margin-bottom: 0
+        padding-bottom: $base-margin
+      // end-last
+
+      .section-header
+        margin-bottom: $base-margin
+        text-align: left
+      // end-header
+
+      &.choose-section
+        .service-cards
+          text-align: center
+        // end-cards
+      // end-choose
+
+      &.details-section
+        .service-details
+          .plans-col
+            padding-top: $base-margin
+            padding-bottom: $base-margin
+
+            &.plans-col
+              padding-bottom: 0
+            // end-plans-col
+          // end-col
+        // end-service-details
+      // end-details
+
+      &.payment-section
+        text-align: center
+      // end-payment
+    // end-page-section
+  // end-page-main
+// end-l-dashboard

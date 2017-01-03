@@ -1,0 +1,19 @@
+<header class="page-header">
+    <div class="header-content">
+        <div class="inner page-header-container wide-width">
+            <div class="header-logo col-logo">
+                {% if include.version == 'small' %}
+                <a href="" ui-sref="landing"><span class="logo" ng-include="'static/images/logo-fc-small.svg'"></span></a>
+                {% else %}
+                <a href="" ui-sref="landing"><span class="logo" ng-include="'static/images/logo-fc.svg'"></span></a>
+                {% endif %}
+            </div> <!-- end-logo -->
+
+            <div class="header-menu align-right col-menu">
+                <nav class="menu main-menu {{ theme|default('light') }} {{ version|default('') }}" scroll-link>
+                    {% include menu.html %}
+                </nav> <!-- end-main-menu -->
+            </div> <!-- end-header-menu -->
+        </div> <!-- end-container -->
+    </div> <!-- end-content -->
+</header> <!-- end-page-header -->

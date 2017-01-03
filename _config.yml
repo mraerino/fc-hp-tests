@@ -1,0 +1,67 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Your awesome title
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+analytics_id: "UA-78730664-1"
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - bower.json
+
+defaults:
+  - scope:
+      path: "index"
+    values:
+      hero_background:
+      hero_tagline:
+      about_cta_link:
+      about_cta_text:
+      pp_heading:
+      pp_columns:
+      pr_section_heading:
+      pr_jumbotron_background:
+      pr_jumbotron_title:
+      pr_jumbotron_cta_text:
+      events_section_heading:
+      events_jumbotron_background:
+      events_jumbotron_title:
+      events_jumbotron_cta_link:
+      events_jumbotron_cta_text:
+      events_upcoming_heading:
+      events_upcoming_cta_link:
+      events_upcoming_cta_text:
+      events_newsletter_heading:
+      events_newsletter_paragraph:
+      fc_jumbotron_background:
+      fc_jumbotron_title:
+      fc_jumbotron_paragraph:
+      fc_jumbotron_cta_text:
+      clients_section_heading:
+      clients:
+        - image:
+          link:
+      clients_testimonials:
+        - company:
+          full_name:
+          position:
+          text:

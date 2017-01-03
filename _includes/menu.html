@@ -1,0 +1,12 @@
+<ul class="list">
+    {% for row in cms.menu.entries %}
+    <li class="item">
+        <a href="{{ row.url }}" {% if getCurrentUrl()|startsWith(row.url) %}active{% endif %}>
+            {{ row.label }}
+        </a>
+    </li>
+    {% endfor %}
+    <li class="item langs">
+        {% include langs.html %}
+    </li>
+</ul>

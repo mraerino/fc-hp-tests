@@ -1,0 +1,111 @@
+// ====================================================================
+// ==  @page-footer  ==
+// ====================================================================
+
+.page-footer
+  background-color: $dark
+  padding-top: $base-margin
+  padding-bottom: $base-margin
+
+  .inner
+    .newsletter
+      text-align: center
+
+      .title
+        color: $light
+        text-transform: uppercase
+        margin-bottom: $base-margin / 2
+      // end-title
+    // end-newsletter
+
+    .footer-menu
+      margin-bottom: $base-margin / 2
+    // end-menu
+
+    .infos
+      color: $light
+
+      .contact
+        font-size: em(12)
+
+        > *
+          vertical-align: top
+        // end-*
+
+        .fc
+          display: table-cell
+          padding-right: $base-margin / 2
+          border-right: 1px solid $dark-gray
+
+          .footer-logo
+            display: table-cell
+
+            .logo
+              svg
+                g
+                  fill: $light
+                // end-g
+              // end-svg
+            // end-logo
+          // end-logo
+
+          .details
+            display: table-cell
+            padding-left: $base-margin / 2
+            vertical-align: middle
+
+            p
+              color: $dark-gray
+              margin-bottom: em(8)
+              line-height: normal
+
+              strong
+                color: $light
+                font-weight: normal
+              // end-strong
+
+              .own-line
+                display: block
+            // end-part
+
+            a
+              color: $dark-gray
+            // end-a
+          // end-details
+        // end-fc
+
+        .partners
+          display: table-cell
+          padding-left: $base-margin / 2
+
+          .title
+            margin-bottom: $base-margin / 4
+            line-height: normal
+          // end-title
+
+          .footer-partners-nav
+            .list
+              .item
+                display: inline-block
+                vertical-align: bottom
+                margin-right: $base-margin / 4
+
+                &:last-child
+                  margin-right: 0
+                // end-last
+              // end-item
+            // end-list
+          // end-partners-nav
+        // end-partners
+      // end-contact
+
+      .links
+        text-align: right
+
+        .social-links
+          margin-bottom: $base-margin
+        // end-social
+      // end-links
+    // end-infos
+  // end-inner
+// end-page-footer

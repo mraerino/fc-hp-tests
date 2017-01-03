@@ -1,0 +1,131 @@
+// ====================================================================
+// ==  @link  ==
+// ====================================================================
+
+a.link,
+button.link,
+  text-decoration: none
+  position: relative
+  padding-right: $link-padding
+  padding-left: $link-padding
+  padding-bottom: em(10)
+  font-family: $oswald
+  +trans()
+
+  &::after
+    content: ''
+    display: inline-block
+    position: absolute
+    +size(100% rem(4))
+    +center(x)
+    bottom: 0
+    +trans()
+  // end-line
+
+  &-icon
+    padding-right: 0
+
+    .icon
+      font-size: em(14)
+      margin-left: $link-icon-margin
+      +trans()
+    // end-icon
+  // end-icon
+
+  &:hover
+    &::after
+      width: 105%
+    // end-line
+  // end-hover
+
+  &-green
+    &::after
+      background-color: $green
+    // end-line
+
+    .icon
+      color: $green
+    // end-icon
+
+    &:hover
+      &::after
+      // end-line
+
+      .icon
+      // end-icon
+    // end-hover
+  // end-green
+
+  &-gray
+    &::after
+      background-color: $gray
+    // end-line
+
+    .icon
+      color: $gray
+    // end-icon
+
+    &:hover
+      &::after
+      // end-line
+
+      .icon
+      // end-icon
+    // end-hover
+  // end-gray
+
+  &-light
+    color: $light
+
+    &::after
+      background-color: $light
+    // end-line
+
+    .icon
+      color: $light
+    // end-icon
+
+    &:hover
+
+      &::after
+      // end-line
+
+      .icon
+      // end-icon
+    // end-hover
+  // end-light
+
+  &-small
+    font-family: $lato
+
+    .icon
+      margin-left: $link-icon-margin / 2
+    // end-icon
+  // end-small
+
+  &-special
+    display: block
+    text-align: left
+    padding-top: em(15)
+    padding-bottom: em(15)
+    padding-left: $link-padding * 2
+
+    .icon
+      position: absolute
+      right: 0
+      +center(y)
+      font-size: em(30)
+    // end-icon
+  // end-special
+
+  &-inline
+    font-family: $lato
+    padding-right: 0
+    padding-left: 0
+    padding-bottom: rem(8)
+
+    &:hover
+      border-width: rem(6)
+    // end-hover
+  // end-inline
+// end-link

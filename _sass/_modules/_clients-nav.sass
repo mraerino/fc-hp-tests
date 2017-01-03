@@ -1,0 +1,40 @@
+// ====================================================================
+// ==  @clients-nav  ==
+// ====================================================================
+
+.clients-nav
+  .list
+    text-align: center
+
+    .item
+      display: inline-block
+      margin-bottom: $base-margin / 2
+      padding-left: $base-margin / 4
+      padding-right: $base-margin / 4
+
+      .outer
+        display: block
+        border: 1px solid $gray
+        border-radius: $radius-lg
+        padding-left: $base-margin / 4
+        padding-right: $base-margin / 4
+        +trans()
+
+        &:hover
+          border-color: $green
+
+        .logo
+          margin: $base-margin / 2
+          display: inline-block
+          width: em(150)
+          height: em(70)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: contain
+
+          // end-logo
+        // end-inner
+      // end-outer
+    // end-item
+  // end-list
+// end-clients-nav

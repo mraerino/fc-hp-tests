@@ -1,0 +1,26 @@
+// ====================================================================
+// ==  @fluid-bg  ==
+// ====================================================================
+
+@mixin fluid-bg($bg: default)
+  position: relative
+  overflow: hidden
+
+  .bg
+    min-height: 100%
+    min-width: 100%
+    +size(auto)
+    position: absolute
+    +center(c)
+  // end-bg
+
+  @if $bg == default
+    img,
+    video
+      @extend .bg
+    // end-bg
+  @else
+    .#{$bg}
+      @extend .bg
+    // end-bg
+// end-fluid-bg

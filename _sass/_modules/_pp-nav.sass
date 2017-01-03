@@ -1,0 +1,40 @@
+// ====================================================================
+// ==  @pp-nav  ==
+// ====================================================================
+
+.pp-nav
+  border-bottom: 1px solid $gray
+
+  .list
+    text-align: center
+    font-size: 0
+
+    .item
+      display: inline-block
+      font-size: rem(18)
+
+      a
+        display: block
+        padding-left: $base-margin * 2
+        padding-right: $base-margin * 2
+        padding-top: $base-margin / 2
+        padding-bottom: $base-margin / 2
+        text-transform: capitalize
+        text-decoration: none
+        +trans()
+
+        &:hover
+          background-color: $green
+          color: $light
+        // end-hover
+      // end-a
+
+      &.active
+        a
+          background-color: $green
+          color: $light
+        // end-a
+      // end-active
+    // end-item
+  // and-list
+// end-pp-nav

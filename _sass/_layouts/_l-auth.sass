@@ -1,0 +1,49 @@
+// ====================================================================
+// ==  @l-auth  ==
+// ====================================================================
+
+.l-auth
+  // ==  $reusable-class-names  ==
+  .auth-sections
+    padding: $base-margin / 2
+    border: 1px solid $gray
+    border-radius: $radius-lg
+    background-color: $light
+  // end-sections
+  // end-reusable-class-names
+
+  // ==  $page-hero  ==
+  .page-hero
+    .inner
+      background-image: url('../assets/images/bg-auth.png')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: bottom
+
+      .auth
+        padding-top: $base-margin * 4
+        padding-bottom: $base-margin * 4
+        text-align: center
+
+        .title
+          margin-bottom: $base-margin
+        // end-title
+
+        .auth-form
+          .form-section
+            margin-bottom: $base-margin / 4
+            @extend .auth-sections
+          // end-auth
+
+          .join-section
+            @extend .auth-sections
+
+            a
+              font-size: em(18)
+            // end-a
+          // end-join
+        // end-form
+      // end-auth
+    // end-inner
+  // end-hero
+// end-l-auth

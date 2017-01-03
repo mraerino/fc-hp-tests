@@ -1,0 +1,290 @@
+// ====================================================================
+// ==  @r-ssp  ==
+// ====================================================================
+
+// ==  $ssp-lg  ==
++media($bp-ssp-lg)
+  .l-ssp
+    // ==  $page-hero  ==
+    .page-hero
+      > .inner
+        .content
+          .intro
+            .title
+              font-size: em(52)
+            // end-title
+          // end-intro
+        // end-content
+      // end-inner
+    // end-page-hero
+  // end-l-ssp
+// end-ssp-lg
+
+// ==  $lg  ==
++media($bp-lg)
+  .g-ssp
+    // ==  $page-header  ==
+    .page-header-container
+      .col-logo
+        +span-columns(12)
+        +omega()
+      // end-col
+
+      .col-menu
+        +span-columns(12)
+        +omega()
+      // end-col
+    // end-container
+
+    // ==  $hero  ==
+    .page-hero-container
+      .col
+        +span-columns(12)
+        +omega()
+      // end-col
+    // end-container
+  // end-g-ssp
+
+  .l-ssp
+    // ==  $page-header  ==
+    .page-header
+      .header-content
+        .header-logo
+          margin-bottom: $base-margin / 2
+        // end-header-logo
+      // end-content
+    // end-page-header
+
+    // ==  $page-hero  ==
+    .page-hero
+      > .inner
+        height: auto
+        padding-top: $base-margin / 2
+        padding-bottom: $base-margin / 2
+
+        .content
+          .intro
+            margin-bottom: $base-margin / 2
+          // end-intro
+
+          .signature
+            text-align: center
+          // end-signature
+        // end-content
+      // end-inner
+    // end-page-hero
+
+    // ==  $page-section  ==
+    .page-section
+      &.latest-stories-section
+        height: auto
+        padding-top: $base-margin
+        padding-bottom: $base-margin
+
+        .box
+          top: auto
+        // end-box
+      // end-stories
+    // end-page-section
+  // end-l-ssp
+// end-lg
+
+// ==  $ssp-md  ==
++media($bp-ssp-md)
+  .l-ssp
+    // ==  $page-section  ==
+    .page-section
+      &.ssp-about-section
+        .meet-team
+          .team
+            .team-member
+              position: relative
+              padding-left: 0
+              text-align: center
+
+              .photo
+                position: relative
+                left: auto
+                display: inline-block
+                margin-bottom: $base-margin / 2
+              // end-photo
+
+              .details
+                height: auto
+
+                .parts
+                  +center-reset()
+                // end-parts
+              // end-details
+            // end-team-member
+          // end-team
+        // end-meet-team
+      // end-ssp-about
+    // end-page-section
+  // end-l-ssp
+// end-ssp-md
+
+// ==  $md  ==
++media($bp-md)
+  .g-ssp
+    // ==  $ssp-about  ==
+    .ssp-about-container
+      .col-half
+        +span-columns(12)
+        +omega()
+      // end-col
+    // end-container
+
+    // ==  $project-progress  ==
+    .project-progress-container
+      .col-step
+        +span-columns(12)
+        +omega()
+      // end-col
+    // end-container
+  // end-g-ssp
+
+  .l-ssp
+    // ==  $page-section  ==
+    .page-section
+      &.ssp-about-section
+        .who-we-are
+          .description
+            margin-bottom: $base-margin / 2
+
+            &:last-child
+              margin-bottom: 0
+            // end-last
+          // end-description
+        // end-who-we-are
+
+        .our-mission
+          .description
+            margin-bottom: $base-margin / 2
+          // end-description
+        // end-our-mission
+      // end-ssp-about
+
+      &.project-progress-section
+        .steps
+          .step
+            margin-bottom: $base-margin / 2
+
+            &:last-child
+              margin-bottom: 0
+            // end-last
+          // end-step
+        // end-steps
+      // end-project-progress-section
+    // end-page-section
+  // end-l-ssp
+// end-md
+
+// ==  $ssp-sm  ==
++media($bp-ssp-sm)
+  .g-ssp
+    // ==  $ssp-about  ==
+    .ssp-about-container
+      .col-team-member
+        +span-columns(12)
+        +omega()
+      // end-col
+    // end-container
+  // end-g-ssp
+
+  .l-ssp
+    // ==  $page-section  ==
+    .page-section
+      &.ssp-about-section
+        .meet-team
+          .team
+            .team-member
+              margin-bottom: $base-margin / 2
+
+              &:last-child
+                margin-bottom: 0
+              // end-last
+            // end-team-member
+          // end-team
+        // end-meet-team
+      // end-ssp-about
+
+      &.supporters-section
+        .supporters-nav
+          text-align: center
+
+          .list
+            .item
+              display: block
+              margin-right: 0
+            // end-item
+          // end-list
+        // end-nav
+      // end-supporters-section
+    // end-page-section
+  // end-l-ssp
+// end-ssp-sm
+
+// ==  $sm  ==
++media($bp-sm)
+  .l-ssp
+    // ==  $page-hero  ==
+    .page-hero
+      > .inner
+        .content
+          .intro
+            .title
+              font-size: em(38)
+            // end-title
+          // end-intro
+
+          .signature
+            img
+              width: 100%
+            // end-img
+          // end-signature
+        // end-content
+      // end-inner
+    // end-page-hero
+
+    // ==  $page-section  ==
+    .page-section
+      &.ssp-about-section
+        .our-mission
+          .contact
+            .button
+              padding-left: $base-margin / 2
+              padding-right: $base-margin / 2
+            // end-button
+          // end-contact
+        // end-our-mission
+
+        .meet-team
+          .contact
+            .title
+              margin-bottom: $base-margin / 2
+            // end-title
+
+            .details-nav
+              .list
+                .item
+                  display: block
+                  margin-right: 0
+                  margin-bottom: $base-margin / 2
+
+                  &:last-child
+                    margin-bottom: 0
+                  // end-last
+                // end-item
+              // end-list
+            // end-details-nav
+          // end-contact
+        // end-meet-team
+      // end-ssp-about
+    // end-page-section
+  // end-l-ssp
+// end-sm
+
+// ==  $xs  ==
++media($bp-xs)
+// end-xs

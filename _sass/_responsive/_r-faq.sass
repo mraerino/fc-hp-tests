@@ -1,0 +1,78 @@
+// ====================================================================
+// ==  @r-faq  ==
+// ====================================================================
+
+// ==  $lg  ==
++media($bp-lg)
+  .g-faq
+    // ==  $faq-nav  ==
+    .faq-nav-container
+      .col
+        +span-columns(6)
+        +omega(2n)
+      //end-col
+    // end-container
+  // end-g-faq
+// end-lg
+
+// ==  $md  ==
++media($bp-md)
+  .g-faq
+    // ==  $faq-more  ==
+    .faq-more-container
+      .col-sidebar
+        +span-columns(12)
+      // end-col
+
+      .col-page
+        +span-columns(12)
+        +omega()
+      // end-page
+    // end-container
+  // end-g-faq
+
+  .l-faq
+    // ==  $page-hero  ==
+    .page-hero
+      > .inner
+        height: auto
+
+        .content
+          padding-top: $base-margin / 2
+          padding-bottom: $base-margin / 2
+        // end-content
+      // end-inner
+    // end-page-hero
+
+    .page-main
+      .page-section
+        &.faq-more-section
+          .sidebar
+            display: none
+          // end-sidebar
+
+          .page
+            padding-left: 0
+          // end-page
+        // end-faq-more
+      // end-page-section
+    // end-page-main
+  // end-l-faq
+// end-md
+
+// ==  $sm  ==
++media($bp-sm)
+  .g-faq
+    // ==  $faq-nav  ==
+    .faq-nav-container
+      .col
+        +span-columns(12)
+        +omega()
+      //end-col
+    // end-container
+  // end-g-faq
+// end-sm
+
+// ==  $xs  ==
++media($bp-xs)
+// end-xs

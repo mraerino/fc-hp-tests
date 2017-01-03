@@ -1,0 +1,210 @@
+// ====================================================================
+// ==  @r-landing  ==
+// ====================================================================
+
+// ==  $lg  ==
++media($bp-lg)
+  .g-landing
+    // ==  $hero  ==
+    .page-hero-container
+      .col
+        +span-columns(12)
+        +omega()
+      // end-col
+    // end-container
+
+    // ==  $pp  ==
+    .pp-container
+      +outer-container(em(600))
+
+      .col-card
+        +span-columns(6)
+        +omega(2n)
+      // end-col
+
+      &.three
+        +outer-container(em(600))
+
+        .col-card
+          +span-columns(6)
+          +omega(2n)
+        // end-col
+      // end-three
+    // end-container
+
+    // ==  $events  ==
+    .events-container
+      .col
+        +span-columns(12)
+        +omega()
+      // end-col
+    // end-container
+  // end-g-landing
+
+  .l-landing
+    // ==  $page-hero  ==
+    .page-hero
+      .inner
+        height: auto
+
+        .intro
+          padding-top: $base-margin
+          padding-bottom: $base-margin
+        // end-intro
+      // end-inner
+    // end-page-hero
+
+    // ==  $page-section  ==
+    .page-section
+      &.pp-section
+        padding-bottom: $base-margin / 2
+
+        .plan-card
+          margin-bottom: $base-margin / 2
+        // end-plan-card
+      // end-plans
+
+      &.events-section
+        .more
+          .upcoming-events
+            margin-bottom: $base-margin / 2
+          // end-upcoming-events
+        // end-more
+      // end-events
+    // end-section
+  // end-l-landing
+// end-lg
+
+// ==  $md  ==
++media($bp-md)
+  .g-landing
+    // ==  $clients  ==
+    .clients-container
+      .col-client
+        +omega-reset(6n)
+        +span-columns(4)
+        +omega(3n)
+      // end-col
+
+      .col-testi
+        +omega-reset(3n)
+        +span-columns(6)
+        +omega(2n)
+      // end-col
+    // end-container
+  // end-g-landing
+
+  .l-landing
+    // ==  $page-section  ==
+    .page-section
+    // end-section
+  // end-l-landing
+// end-md
+
+// ==  $ldg-sm  ==
++media($bp-ldg-sm)
+  .g-landing
+    // ==  $pp  ==
+    .pp-container
+      padding-left: $base-margin
+      padding-right: $base-margin
+
+      .col-card
+        +span-columns(12)
+        +omega()
+      // end-col
+
+      &.three
+        .col-card
+          +span-columns(12)
+        // end-col
+      // end-three
+    // end-container
+
+    // ==  $events  ==
+    .events-container
+      .col
+        .col-input
+          +span-columns(12)
+          +omega()
+        // end-col
+
+        .col-btn
+          +span-columns(12)
+          +omega()
+        // end-col
+      // end-col
+    // end-container
+
+    // ==  $clients  ==
+    .clients-container
+      .col-testi
+        +omega-reset(2n)
+        +span-columns(12)
+        +omega()
+      // end-col
+    // end-container
+  // end-g-landing
+
+  .l-landing
+    .page-section
+      &.events-section
+        .jumbotron
+        // end-jumbotron
+
+        .more
+          text-align: center
+
+          .upcoming-events
+            .upcoming-events-nav
+              text-align: left
+            // end-nav
+          // end-upcoming-events
+
+          .newsletter
+            .events-newsletter-form
+              .form-group
+                .form-elem
+                  margin-bottom: $base-margin / 4
+
+                  &:last-child
+                    margin-bottom: 0
+                  // end-last
+                // end-elem
+              // end-group
+            // end-events-newsletter-form
+          // end-newsletter
+        // end-more
+      // end-events
+    // end-section
+  // end-l-landing
+// end-ldg-sm
+
+// ==  $sm  ==
++media($bp-sm)
+  .g-landing
+    // ==  $hero  ==
+    .page-hero-container
+      .col
+        +span-columns(12)
+        +omega()
+      // end-col
+    // end-container
+
+    // ==  $clients  ==
+    .clients-container
+      .col-client
+        +omega-reset(3n)
+        +span-columns(6)
+        +omega(2n)
+      // end-col
+    // end-container
+  // end-g-landing
+
+  .l-landing
+  // end-l-landing
+// end-sm
+
+// ==  $xs  ==
++media($bp-xs)
+// end-xs

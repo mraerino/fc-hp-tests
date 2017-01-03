@@ -1,0 +1,57 @@
+// ====================================================================
+// ==  @r-countdown  ==
+// ====================================================================
+
+// ==  $lg  ==
++media($bp-lg)
+  .countdown
+    text-align: center
+    padding-top: $base-margin
+    padding-bottom: $base-margin
+
+    .wrapper
+      .heading
+        text-align: center
+        margin-bottom: $base-margin / 2
+      // end-heading
+    // end-wrapper
+  // end-countdown
+// end-lg
+
+// ==  $md  ==
++media($bp-md)
+// end-md
+
+// ==  $sm  ==
++media($bp-sm)
+  .countdown
+    .wrapper
+      display: block
+
+      .heading
+      // end-heading
+
+      .clock
+        .clock-section
+          display: block
+          margin-right: 0
+          margin-bottom: $base-margin / 2
+
+          &:last-child
+            margin-right: 0
+          // end-last
+
+          .count
+          // end-count
+
+          .name
+          // end-name
+        // end-section
+      // end-clock
+    // end-wrapper
+  // end-countdown
+// end-sm
+
+// ==  $xs  ==
++media($bp-xs)
+// end-xs

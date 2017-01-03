@@ -1,0 +1,96 @@
+// ====================================================================
+// ==  @plan-card  ==
+// ====================================================================
+
+.plan-card
+  position: relative
+  height: em(380)
+  border-radius: $radius-lg
+  overflow: hidden
+  background-color: $light
+  +shadow-box()
+  +transform(translateZ(0))
+
+  .card-fig
+    +fluid-bg(fig)
+    +size(100%)
+    +transform(translateZ(0))
+
+    .fig
+      display: block
+    // end-fig
+  // end-card-fig
+
+  .description
+    position: absolute
+    width: 100%
+    padding: $base-margin / 2
+    top: 100%
+    background-color: $light
+    z-index: 9
+    +trans()
+
+    .details
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      padding: $base-margin / 2
+      text-align: left
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,0.75) 100%)
+      +transform(translateY(-100%))
+
+      .title
+        font-size: em(24)
+        line-height: rem(36)
+        letter-spacing: rem(1.36)
+        text-transform: uppercase
+        color: $light
+      // end-title
+
+      .price
+        font-family: $oswald
+        font-weight: 300
+        letter-spacing: em(0.9)
+        color: $light
+
+        &.has-new
+          .old
+            text-decoration: line-through
+          // end-old
+        // end-has-new
+
+        .new
+          margin-left: rem(5)
+          font-weight: 700
+          font-size: em(18)
+        // end-new
+      // end-price
+    // end-details
+
+    .text
+      text-align: left
+
+      p
+        font-size: em(14)
+        line-height: rem(17)
+        letter-spacing: rem(0.8)
+        margin-bottom: $base-margin / 4
+        color: $gray
+      // end-p
+    // end-text
+
+    .cta
+      .button
+        text-transform: uppercase
+        border-radius: $radius-sm
+      // end-button
+    // end-cta
+  // end-description
+
+  &:hover
+    .description
+      +transform(translateY(-100%))
+    // end-description
+  // end-hover
+// end-plan-card

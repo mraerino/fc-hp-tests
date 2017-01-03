@@ -1,0 +1,55 @@
+// ====================================================================
+// ==  @page-hero  ==
+// ====================================================================
+
+.page-hero
+  position: relative
+
+  .inner
+    .content
+      position: relative
+      +center(y)
+
+      .intro
+        .slogan
+          margin-bottom: $base-margin
+
+          .heading
+            margin-bottom: $base-margin / 2
+            color: $light
+          // end-heading
+
+          .subtext
+            font-size: em(18)
+            color: $light
+          // end-subtext
+        // end-slogan
+
+        .cta
+          .link
+            font-size: em(20)
+            color: $light
+          // end-link
+        // end-cta
+      // end-intro
+    // end-content
+  // end-inner
+
+  &.simple
+    background-color: $dark
+
+    > .inner
+      height: em(355)
+
+      .content
+        text-align: center
+
+        .page-title
+          color: $light
+          text-transform: uppercase
+          font-weight: 300
+        // end-page-title
+      // end-content
+    // end-inner
+  // end-simple
+// end-hero

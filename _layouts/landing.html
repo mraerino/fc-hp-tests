@@ -1,0 +1,199 @@
+---
+layout: base
+hideHeader: true
+---
+
+<div class="banner" ng-controller="BannerCtrl">
+    <div class="inner banner-container full-width">
+        {{ page.banner_text|markdownify }}
+        <a href="" class="close"></a>
+    </div> <!-- end-inner -->
+</div>
+
+<div class="l-landing g-landing" ng-controller="LandingCtrl">
+    <div class="page-hero">
+        <div class="inner" style="background-image: url({{ page.hero_background }});">
+            {% include header.html %}
+
+            <div class="content page-hero-container wide-width">
+                <div class="intro col">
+                    <h1 class="heading">{{ page.hero_tagline }}</h1>
+                </div> <!-- end-intro -->
+
+                <div class="booking col">
+                    <!-- here goes the booking form -->
+                </div> <!-- end-intro -->
+            </div> <!-- end-content -->
+        </div> <!-- end-inner -->
+    </div> <!-- end-hero -->
+
+    <main class="page-main">
+        <div class="page-section about-section" id="about">
+            <div class="about about-container">
+                <div class="text">
+                    {{ page.about_paragraph|markdownify }}
+                </div> <!-- end-text -->
+
+                <div class="cta">
+                    <a href="{{ page.about_cta_link }}" class="link link-green">
+                        {{ page.about_cta_text }}
+                    </a> <!-- end-link -->
+                </div> <!-- end-cta -->
+            </div> <!-- end-container -->
+        </div> <!-- end-about-section -->
+
+        <section class="page-section pp-section" id="services">
+            <h2 class="section-title">{{ page.pp_heading }}</h2>
+
+            <div class="pp pp-container wide-width">
+                {% for pp_column in page.pp_columns %}
+                <div class="plan-card col-card">
+                    <div class="card-fig">
+                        <img class="fig" src="{{ pp_column.figure }}" />
+                    </div> <!-- end-fig -->
+
+                    <div class="description">
+                        <div class="details">
+                            <h3 class="title">{{ pp_column.heading }}</h3>
+                            <p class="price">{{ pp_column.price_line }}</p>
+                        </div> <!-- end-details -->
+
+                        <div class="text">
+                            {{ pp_column.description|markdownify }}
+                        </div>
+
+                        <div class="cta">
+                            <a href="" class="button button-filled green" ng-click="modal.show('content', { title: '{{ pp_column.cta_type }}' })">{{ pp_column.cta_text }}</a>
+                        </div> <!-- end-cta -->
+                    </div> <!-- end-description -->
+                </div> <!-- end-card -->
+                {% endfor %}
+            </div> <!-- end-cards -->
+        </section> <!-- end-pp -->
+
+        <section class="page-section project-rooms-section has-divider project-rooms-container wide-width" id="project-rooms">
+            <h2 class="section-title">{{ page.pr_section_heading }}</h2>
+
+            <div class="jumbotron row">
+                <img class="background" src="{{ page.pr_jumbotron_background }}" alt="">
+
+                <div class="details">
+                    <h2 class="title">{{ page.pr_jumbotron_title }}</h2>
+                    {{ page.pr_jumbotron_text|markdownify }}
+                    <a href="" class="button button-filled green">{{ page.pr_jumbotron_cta_text }}</a>
+                </div> <!-- end-details -->
+            </div> <!-- end-jumbotron -->
+
+            <hr class="divider big-margin top">
+        </section> <!-- end-project-rooms -->
+
+        <section class="page-section events-section has-divider events-container wide-width" id="events">
+            <h2 class="section-title">{{ page.events_section_heading }}</h2>
+
+            <div class="jumbotron row">
+                <img class="background" src="{{ page.events_jumbotron_background }}" alt="">
+
+                <div class="details">
+                    <h2 class="title">{{ page.events_jumbotron_title }}</h2>
+                    {{ page.events_jumbotron_text|markdownify }}
+                    <a href="" ng-click="modal.show('iframe', { url: '{{ page.events_jumbotron_cta_link }}' })"
+                       class="button button-filled orange">{{ page.events_jumbotron_cta_text }}</a>
+                </div> <!-- end-details -->
+            </div> <!-- end-jumbotron -->
+
+            <div class="more row">
+                <div class="upcoming-events col">
+                    <h3 class="title">{{ page.events_upcoming_heading }}</h3>
+
+                    <nav class="upcoming-events-nav">
+                        <ul class="list">
+                            <li class="item" ng-repeat="event in landing.events|orderBy:event.unix:true|limitTo:3">
+                                <a href="https://www.facebook.com/events/{% raw %}{{ event.id }}{% endraw %}/" target="_blank">
+                                <span class="date">
+                                    <span class="day">{% raw %}{{ event.day }}{% endraw %}</span> <span class="month">{% raw %}{{ event.month }}{% endraw %}</span>
+                                </span>
+                                    <span class="name">{% raw %}{{ event.name }}{% endraw %}</span>
+                                </a>
+                            </li>
+                        </ul> <!-- end-list -->
+                    </nav> <!-- end-upcoming-events-nav -->
+
+                    <a href="{{ page.events_upcoming_cta_link }}" class="button button-transparent orange">
+                        {{ page.events_upcoming_cta_text }}
+                    </a>
+                </div> <!-- end-upcoming-events -->
+
+                <div class="newsletter col">
+                    <h3 class="title">{{ page.events_newsletter_heading }}</h3>
+                    <p class="type">{{ page.events_newsletter_paragraph }}</p>
+
+                    <form class="form events-newsletter-form" name="newsletterForm"
+                          action="https://factorycampus.us4.list-manage.com/subscribe/post"
+                          method="POST">
+                        <input type="hidden" name="u" value="dce202807fd084772beb3e891">
+                        <input type="hidden" name="id" value="dec378f001">
+
+                        <div class="form-group inline row">
+                            <div class="form-elem col-input">
+                                <input type="email" name="MERGE0" class="form-ctrl" required
+                                       placeholder="{{ cms.footer.newsletter_email_placeholder }}">
+                            </div>
+                            <div class="form-elem col-btn">
+                                <button type="submit" class="button button-filled orange">{{ cms.footer.newsletter_submit_text }}</button>
+                            </div> <!-- end-button-field -->
+                        </div> <!-- end-group -->
+                    </form> <!-- end-form -->
+                </div> <!-- end-newsletter -->
+            </div> <!-- end-more -->
+
+            <hr class="divider big-margin top">
+        </section> <!-- end-events -->
+
+        <section class="page-section future-campus-section has-divider future-campus-container wide-width" id="future-campus">
+            <div class="jumbotron row">
+                <img class="background" src="{{ page.fc_jumbotron_background }}" alt="">
+
+                <div class="details">
+                    <h2 class="title">{{ page.fc_jumbotron_title }}</h2>
+                    <p>{{ page.fc_jumbotron_paragraph }}</p>
+                    <a href="" class="button button-filled orange">{{ page.fc_jumbotron_cta_text }}</a>
+                </div> <!-- end-details -->
+            </div> <!-- end-jumbotron -->
+
+            <hr class="divider big-margin top">
+        </section> <!-- end-future-campus -->
+
+        <section class="page-section clients-section clients-container wide-width" id="clients">
+            <h2 class="section-title">{{ page.clients_section_heading }}</h2>
+
+            <div class="clients row">
+                {% for row in page.clients %}
+                <div class="client col-client">
+                    <a href="{{ row.link }}" target="_blank" class="outer">
+                        <img class="logo" src="{{ row.image }}" alt="">
+                    </a> <!-- end-outer -->
+                </div>
+                {% endfor %}
+            </div> <!-- end-clients -->
+
+            <h2 class="section-title">don't take our word for it!</h2>
+
+            <div class="testimonials row">
+                {% for row in page.clients_testimonials %}
+                <div class="testimonial col-testi">
+                    <p class="quote">{{ row.text }}</p>
+                    <p class="cite"><span class="author">{{ row.full_name }}</span><span class="position">{{ row.position }}, {{ row.company }}</span></p>
+                </div> <!-- end-testimonial -->
+                {% endfor %}
+            </div> <!-- end-testimonials -->
+        </section> <!-- end-clients -->
+
+        <section class="page-section latest-stories-section" id="latest-stories">
+            <h2 class="section-title">{{ page.stories_section_heading}}</h2>
+
+            {% include medium.html %}
+        </section> <!-- end-latest-stories-section -->
+    </main> <!-- end-page-main -->
+</div> <!-- end-l-landing -->
+
+<modal ng-show="modal.visible"></modal>

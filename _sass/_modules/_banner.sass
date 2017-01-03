@@ -1,0 +1,55 @@
+// ====================================================================
+// ==  @banner  ==
+// ====================================================================
+
+.banner
+  display: block
+  background-color: $green
+  position: relative
+
+  .inner
+    text-align: center
+    padding-top: $base-margin / 4
+    padding-bottom: $base-margin / 4
+    display: none
+
+    p
+      color: $light
+      letter-spacing: 2px
+      width: 90%
+      margin: 0 auto
+
+      .logo
+        display: inline-block
+        +size(em(28))
+        background-image: url(../images/logo-garagebilk.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        vertical-align: middle
+      // end-logo
+
+      a
+        color: $light
+        text-decoration: underline
+        +trans()
+
+        &:hover
+          color: $dark
+        // end-hover
+      // end-a
+    // end-text
+  // end-inner
+
+  .close
+    display: inline-block
+    position: absolute
+    +size(em(20))
+    background-image: url(../images/icons/icon-close.svg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    +center(y)
+    right: $base-margin / 2
+  // end-close
+// end-banner

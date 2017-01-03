@@ -1,0 +1,146 @@
+// ====================================================================
+// ==  @plans-pricing  ==
+// ====================================================================
+
+.plans-col
+  padding-top: $base-margin
+  padding-bottom: $base-margin
+
+  .header
+    padding-right: em(15)
+    padding-left: em(15)
+
+    .title
+      font-size: em(22)
+      text-transform: uppercase
+      margin-bottom: $base-margin / 2
+    // end-title
+  // end-header
+
+  .list
+    padding-right: em(15)
+    padding-left: em(15)
+
+    .item
+      margin-bottom: $base-margin / 2
+      height: rem(30)
+      line-height: rem(28)
+
+      &:last-child
+        margin-bottom: 0
+      // end-last
+    // end-item
+  // end-list
+
+  &.plans-titles
+    .list
+      margin-top: em(129)
+      padding-left: 0
+      padding-right: 0
+    // end-list
+  // end-plans-titles
+
+  &.plan-details
+    text-align: center
+    border: 1px solid $light-gray
+    border-radius: $radius-lg
+    padding-bottom: 0
+    background-color: $light
+    +shadow-box
+
+    &.blurred
+      opacity: .3
+    // end-blurred
+
+    .header
+      padding-right: em(15)
+      padding-left: em(15)
+
+      .title
+        font-size: em(22)
+        text-transform: uppercase
+        margin-bottom: $base-margin / 2
+      // end-title
+
+      .price
+        font-size: em(38)
+      // end-price
+    // end-header
+
+    .list
+      padding-top: $base-margin / 2
+      padding-bottom: $base-margin / 2
+
+      .item
+        margin-bottom: $base-margin / 2
+        height: rem(30)
+        line-height: rem(28)
+        text-transform: capitalize
+
+        &:last-child
+          margin-bottom: 0
+        // end-last
+
+        &.icon
+          font-size: em(30)
+
+          [class*=check]
+            color: $green
+          // end-check
+
+          [class*=times]
+            color: $gray
+          // end-cross
+        // end-icon
+      // end-item
+    // end-list
+
+    .cta
+      &.start
+        padding-left: em(4)
+        padding-right: em(4)
+        padding-bottom: em(4)
+      // end-start
+
+      &.select
+        padding: $base-margin / 2
+      // end-select
+    // end-cta
+  // end-plan-details
+
+  &.plans-aside
+    background-color: $lighter-gray
+    border: 1px solid $gray
+    border-radius: $radius-lg
+
+    .header
+      text-align: center
+
+      .title
+        font-size: em(22)
+        text-transform: uppercase
+        margin-bottom: $base-margin / 2
+      // end-title
+    // end-header
+
+    .list
+      .item
+        display: table
+        line-height: rem(20)
+
+        &::before
+          content: ''
+          display: inline-block
+          +size(em(12))
+          border-radius: 50%
+          background-color: $gray
+          margin-right: em(15)
+        // end-disc
+
+        .text
+          display: table-cell
+        // end-text
+      // end-item
+    // end-list
+  // end-aside
+// end-plans-col

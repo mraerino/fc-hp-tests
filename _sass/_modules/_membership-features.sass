@@ -1,0 +1,56 @@
+// ====================================================================
+// ==  @membership-features  ==
+// ====================================================================
+
+.membership-features
+  .feature
+    padding: em(15)
+    border: 1px solid $gray
+    border-radius: $radius-lg
+
+    .title
+      text-transform: uppercase
+      color: $green
+      margin-bottom: em(10)
+
+      .icon
+        display: block
+        height: rem(32)
+        width: rem(32)
+        margin-right: auto
+        margin-left: auto
+        margin-bottom: rem(10)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+
+        &.ten-percent
+          font-size: em(32)
+          width: auto
+          background: none
+        // end-slack
+
+        &.slack
+          background-image: url('../images/icons/icon-slack.svg')
+        // end-slack
+
+        &.flexible
+          background-image: url('../images/icons/icon-calendar.svg')
+        // end-slack
+
+        &.kitchen
+          background-image: url('../images/icons/icon-coffee.svg')
+        // end-slack
+      // end-icon
+    // end-title
+
+    .desc
+      height: em(75)
+
+      .text
+        position: relative
+        +center(y)
+      // end-text
+    // end-desc
+  // end-feature
+// end-features

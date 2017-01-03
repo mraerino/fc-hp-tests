@@ -1,0 +1,117 @@
+// ====================================================================
+// ==  @r-about  ==
+// ====================================================================
+
+// ==  $abt-lg  ==
++media($bp-abt-lg)
+  .l-about
+    // ==  $page-section  ==
+    .page-section
+      &.team-section
+        .team
+          .team-member
+            text-align: center
+            padding-left: $base-margin / 2
+            padding-right: $base-margin / 2
+
+            .profile
+              position: relative
+              text-align: center
+              margin-bottom: $base-margin / 2
+            // end-profile
+
+            .details
+              padding-left: 0
+            // end-details
+          // end-team-member
+        // end-team
+      // end-team-section
+    // end-page-section
+  // end-l-about
+// end-abt-lg
+
+// ==  $lg  ==
++media($bp-lg)
+  .l-about
+    // ==  $page-hero  ==
+    .page-hero
+      > .inner
+        .page-header
+        // end-page-header
+
+        .bg-image
+        // end-bg-image
+
+        .content
+          .title
+          // end-title
+        // end-content
+      // end-inner
+    // end-page-hero
+  // end-l-about
+// end-lg
+
+// ==  $md  ==
++media($bp-md)
+  .g-about
+    // ==  $team  ==
+    .team-container
+      .col
+        +omega-reset(3n)
+        +span-columns(6)
+        +omega(2n)
+      // end-col
+    // end-container
+  // end-g-about
+// end-md
+
+// ==  $sm  ==
++media($bp-sm)
+  .g-about
+    .intro-container
+      .col
+        +span-columns(12)
+        +omega()
+        margin-top: $base-margin / 2
+
+    // ==  $team  ==
+    .team-container
+      .col
+        +span-columns(12)
+        +omega()
+      // end-col
+    // end-container
+  // end-g-about
+
+  .l-about
+    // ==  $page-hero  ==
+    .page-hero
+      > .inner
+        .page-header
+        // end-page-header
+
+        .bg-image
+          .img
+          // end-img
+        // end-bg-image
+
+        .content
+          position: relative
+          +center-reset()
+          margin-top: $base-margin
+
+          h2
+            font-size: rem(30)
+
+          .title
+            font-size: $title-sm
+          // end-title
+        // end-content
+      // end-inner
+    // end-page-hero
+  // end-l-about
+// end-sm
+
+// ==  $xs  ==
++media($bp-xs)
+// end-xs

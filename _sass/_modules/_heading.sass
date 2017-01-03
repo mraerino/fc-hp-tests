@@ -1,0 +1,55 @@
+// ====================================================================
+// ==  @heading  ==
+// ====================================================================
+
+.heading
+  position: relative
+
+  &-lined
+    .title
+      display: inline-block
+      position: relative
+      padding-right: $base-margin / 2
+      text-transform: capitalize
+
+      .step-num
+        display: inline-block
+        +size(rem(20))
+        font-size: em(5)
+        line-height: rem(20)
+        vertical-align: middle
+        text-align: center
+        border-radius: 50%
+        background-color: $green
+        margin-right: $base-margin / 4
+        color: $light
+      // end-step-num
+
+      .text
+        font-weight: 300
+      // end-title
+    // end-title
+
+    &::before
+      content: ''
+      display: block
+      height: 2px
+      width: 100%
+      background-color: $light-gray
+      position: absolute
+      +center(y)
+    // end-line
+
+    &.light
+      .title
+        background-color: $light
+      // end-title
+    // end-light
+
+    &.gray
+      .title
+        background-color: $lighter-gray
+      // end-title
+    // end-gray
+  // end-lined
+// end-heading

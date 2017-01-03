@@ -1,0 +1,118 @@
+// ====================================================================
+// ==  @l-legal  ==
+// ====================================================================
+
+.l-legal
+  // ==  $page-hero  ==
+  .page-hero
+  // end-page-hero
+
+  // ==  $page-main  ==
+  .page-main
+    .page-section
+      text-align: left
+
+      .sidebar
+        min-height: em(100)
+
+        .data-protection-nav
+          // ==  $reusable-class-names  ==
+          .nav-item
+            margin-bottom: em(10)
+
+            &:last-child
+              margin-bottom: 0
+            // end-last
+
+            a
+              text-transform: capitalize
+              color: $gray
+              font-family: $oswald
+              font-weight: 300
+              +trans()
+
+              &:hover
+                color: $green
+              // end-hover
+            // end-a
+
+            &.active
+              a
+                color: $green
+              // end-a
+            // end-active
+          // end-nav-item
+          // end-reusable-class-names
+
+          .list
+            .item
+              @extend .nav-item
+
+              .sublist
+                margin-top: em(10)
+                margin-left: em(10)
+
+                .subitem
+                  @extend .nav-item
+                // end-subitem
+              // end-sublist
+            // end-item
+          // end-list
+
+          &.sticky
+            position: fixed
+            top: $base-margin / 2
+          // end-sticky
+        // end-data-protection-nav
+      // end-sidebar
+
+      .section
+        margin-bottom: $base-margin
+        color: $dark-gray
+
+        &:last-child
+          margin-bottom: 0
+        // end-last
+
+        h2
+          margin-bottom: $base-margin
+        // end-title
+
+        h3
+          margin-top: $base-margin
+          margin-bottom: $base-margin / 2
+        // end-subtitle
+
+        .lead
+          color: $dark
+        // end-lead
+
+        p
+          white-space: pre-line
+
+        a
+          color: $green
+          +trans()
+
+          &:hover
+            color: $dark
+          // end-hover
+        // end-a
+
+        ul
+          list-style: disc
+          list-style-position: inside
+          margin-bottom: $base-margin / 2
+
+          li
+            margin-bottom: em(10)
+
+            &:last-child
+              margin-bottom: 0
+            // end-last
+          // end-item
+        // end-list
+      // end-section
+    // end-page
+  // end-page-main
+// end-l-legal

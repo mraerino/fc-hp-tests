@@ -1,0 +1,32 @@
+// ====================================================================
+// ==  @g-about  ==
+// ====================================================================
+
+.g-about
+  // ==  $about  ==
+  // intro
+  .about-intro-container
+    +outer-container(em(800))
+  // end-container
+
+  // highlight
+  .about-highlight-container
+    +outer-container(em(500))
+  // end-container
+
+  // ==  $team  ==
+  .intro-container
+    +outer-container(em(1440))
+
+    .col
+      +span-columns(6)
+
+  .team-container
+    +outer-container(em(1440))
+
+    .col
+      +span-columns(4)
+      +omega(3n)
+    // end-col
+  // end-container
+// end-g-about

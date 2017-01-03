@@ -1,0 +1,39 @@
+// ====================================================================
+// ==  @r-latest-stories-section  ==
+// ====================================================================
+
+// ==  $lg  ==
++media($bp-lg)
+// end-lg
+
+// ==  $md  ==
++media($bp-md)
+  // ==  $latest-stories  ==
+  .latest-stories-container
+    .col
+      +span-columns(12)
+      +omega()
+    // end-col
+  // end-container
+
+  .latest-stories-section
+    .box
+      .week-story
+        margin-bottom: $base-margin / 2
+      // end-week-story
+    // end-box
+  // end-latest-stories-section
+// end-md
+
+// ==  $sm  ==
++media($bp-sm)
+  .latest-stories-section
+    .stories-title
+      text-align: center
+    // end-stories-title
+  // end-latest-stories-section
+// end-sm
+
+// ==  $xs  ==
++media($bp-xs)
+// end-xs

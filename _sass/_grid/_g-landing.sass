@@ -1,0 +1,57 @@
+// ====================================================================
+// ==  @g-landing  ==
+// ====================================================================
+
+.g-landing
+  // ==  $hero  ==
+  .page-hero-container
+  // end-container
+
+  // ==  $about  ==
+  .about-container
+    +outer-container(em(800))
+  // end-container
+
+  // ==  $pp  ==
+  .pp-container
+    .col-card
+      +span-columns(3)
+    // end-col
+
+    &.three
+      +outer-container(em(960))
+
+      .col-card
+        +span-columns(4)
+      // end-col
+    // end-three
+  // end-container
+
+  // ==  $events  ==
+  .events-container
+    .col
+      +span-columns(6)
+
+      .col-input
+        +span-columns(8)
+      // end-col
+
+      .col-btn
+        +span-columns(4)
+      // end-col
+    // end-col
+  // end-container
+
+  // ==  $clients  ==
+  .clients-container
+    .col-client
+      +span-columns(2)
+      +omega(6n)
+    // end-col
+
+    .col-testi
+      +span-columns(4)
+      +omega(3n)
+    // end-col
+  // end-container
+// end-g-landing

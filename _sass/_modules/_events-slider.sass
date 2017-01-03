@@ -1,0 +1,96 @@
+// ====================================================================
+// ==  @events-slider  ==
+// ====================================================================
+
+.events-slider
+  max-width: em(460)
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: $base-margin / 2
+  overflow: hidden
+
+  .slides
+    white-space: nowrap
+    position: relative
+    margin-bottom: $base-margin / 2
+
+    .slide
+      display: inline-block
+      margin-right: $base-margin
+      vertical-align: top
+      width: 100%
+
+      &:last-child
+        margin-right: 0
+      // end-last
+
+      .event
+        display: table
+        text-align: left
+        margin-bottom: em(10)
+
+        &:last-child
+          margin-bottom: 0
+        // end-last
+
+        .date
+          background-color: $lighter-gray
+          margin-right: $base-margin / 2
+          padding: em(8)
+          border-radius: $radius-lg
+          display: table-cell
+          text-align: center
+          position: relative
+
+          .month
+            display: block
+            text-transform: uppercase
+            font-size: em(14)
+          // end-month
+
+          .day
+            font-size: em(26)
+            display: block
+          // end-day
+        // end-date
+
+        .infos
+          display: table-cell
+          padding-left: $base-margin / 2
+          white-space: normal
+
+          .name
+            margin-bottom: $base-margin / 4
+          // end-name
+        // end-infos
+      // end-event
+    // end-slide
+  // end-slides
+
+  .dots-nav
+    .list
+      .item
+        display: inline-block
+        margin-right: em(6)
+
+        &:last-child
+          margin-right: 0
+        // end-last
+
+        .dot
+          display: block
+          +size(em(8))
+          border-radius: 50%
+          background-color: $light-gray
+          cursor: pointer
+        // end-dot
+
+        &.active
+          .dot
+            background-color: $gray
+          // end-dot
+        // end-active
+      // end-item
+    // end-list
+  // end-dots
+// end-events-slider

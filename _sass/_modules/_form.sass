@@ -1,0 +1,97 @@
+// ====================================================================
+// ==  @form  ==
+// ====================================================================
+
+.form
+  .form-group
+    margin-bottom: $base-margin / 2
+
+    &:last-child
+      margin-bottom: 0
+    // end-last
+
+    .form-elem
+      margin-bottom: 0
+      +trans()
+    // end-elem
+
+    &.inline
+      .form-elem
+        display: inline-block
+        margin-right: $base-margin / 4
+      // end-form-elem
+
+      &.same-height
+        line-height: $form-ctrl-h
+
+        .form-label
+          line-height: normal
+        // end-label
+
+        .select,
+        .button
+          line-height: normal
+        // end-select
+      // end-same-height
+    // end-inline
+  // end-group
+
+  .form-elem
+    margin-bottom: $base-margin / 2
+    position: relative
+
+    &:last-child
+      margin-bottom: 0
+    // end-last
+
+    .form-label
+      display: block
+      text-align: left
+      margin-bottom: $base-margin / 4
+    // end-label
+
+    .form-ctrl
+      width: 100%
+      border: 1px solid $light-gray
+      border-radius: $radius-lg
+      padding: $base-margin / 4 $base-margin / 2
+      font-size: em(18)
+      height: $form-ctrl-h
+      background-color: $light
+      +trans()
+    // end-ctrl
+
+    .form-link
+    // end-link
+
+    &.joined-label
+      vertical-align: top
+
+      .form-label
+        position: absolute
+        left: $base-margin / 2
+        top: $base-margin / 4
+        text-transform: uppercase
+        color: $gray
+        font-size: em(12)
+      // end-label
+
+      .form-ctrl
+        padding-top: $base-margin / 1.5
+      // end-form-ctrl
+
+      .button
+        padding-top: $base-margin / 2
+        padding-bottom: $base-margin / 2
+        padding-right: $base-margin
+        padding-left: $base-margin
+      // end-button
+    // end-joined-label
+
+    &.invalid
+      .form-ctrl
+        border-color: $red
+      // end-ctrl
+    // end-invalid
+  // end-elem
+// end-form

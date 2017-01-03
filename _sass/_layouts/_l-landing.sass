@@ -1,0 +1,260 @@
+// ====================================================================
+// ==  @l-landing  ==
+// ====================================================================
+
+.l-landing
+  // ==  $page-hero  ==
+  .page-hero
+    overflow: hidden
+
+    .video
+      position: absolute
+      min-width: 100%
+      min-height: 100%
+      +size(auto)
+      +center(y)
+      opacity: .5
+    // end-video
+
+    > .inner
+      height: em(560)
+      background-size: cover
+      background-position: top center
+
+      .content
+        .intro
+          .heading
+            color: $dark
+            font-weight: 300
+            text-transform: uppercase
+            font-size: em(64)
+            line-height: rem(94)
+            margin-bottom: 0
+          // end-heading
+        // end-intro
+
+        .booking
+          .booking-form
+          // end-booking-form
+        // end-booking
+      // end-content
+    // end-inner
+  // end-page-hero
+
+  // ==  $page-section  ==
+  .page-section
+    .section-title
+      font-weight: 300
+    // end-section-title
+
+    &.about-section
+      .about
+        .text
+          margin-bottom: $base-margin / 2
+
+          p
+            font-family: $oswald
+            font-weight: 300
+            font-size: em(26)
+            line-height: rem(46)
+          // end-p
+        // end-text
+
+        .cta
+          text-transform: uppercase
+        // end-cta
+      // end-about
+    // end-about
+
+    &.pp-section
+      background-image: url(../images/pattern-plus.svg)
+      background-position: center
+
+      .section-title
+        color: $dark
+      // end-title
+    // end-pp
+
+    &.project-rooms-section
+    // end-project-rooms
+
+    &.events-section
+      .jumbotron
+        margin-bottom: $base-margin / 2
+      // end-jumbotron
+
+      .more
+        text-align: left
+
+        .title
+          font-weight: 300
+          font-size: em(24)
+          margin-bottom: $base-margin / 2
+        // end-title
+
+        .upcoming-events
+          .upcoming-events-nav
+            .list
+              .item
+                margin-bottom: $base-margin / 2
+
+                &:last-child
+                  margin-bottom: 0
+                // end-last
+
+                .date
+                  text-transform: uppercase
+                  color: $gray
+                  margin-right: $base-margin / 4
+
+                  .day
+                    color: $orange
+                  // end-day
+                // end-date
+              // end-item
+            // end-list
+          // end-nav
+
+          .button
+            margin-top: $base-margin
+        // end-upcoming-events
+
+        .newsletter
+          .type
+            margin-bottom: $base-margin / 2
+            font-size: em(14)
+            line-height: rem(20)
+            letter-spacing: rem(0.8)
+          // end-type
+
+          .events-newsletter-form
+            .form-group
+              .form-elem
+                .form-ctrl
+                  font-size: em(14)
+                  +shadow-box()
+                // end-ctrl
+
+                .button
+                  width: 100%
+                  +shadow-box()
+                // end-button
+              // end-elem
+            // end-group
+          // end-events-newsletter-form
+        // end-newsletter
+      // end-more
+    // end-events
+
+    &.future-campus-section
+      .jumbotron
+        padding: $base-margin / 2
+
+        .details
+          position: relative
+          background-color: $light
+          border-radius: $radius-lg
+          text-align: center
+          margin: 0 auto
+          top: 100%
+          +transform(translateY(-100%))
+          +shadow-box()
+
+          .title
+            font-size: em(24)
+            line-height: rem(36)
+            color: $dark
+            margin-bottom: $base-margin / 4
+          // end-title
+
+          p
+            color: $gray
+            margin-bottom: $base-margin / 4
+          // end-p
+        // end-details
+      // end-jumbotron
+    // end-future-campus
+
+    &.clients-section
+      .clients
+        margin-bottom: $base-margin / 2
+
+        .client
+          margin-bottom: $base-margin / 2
+
+          .outer
+            display: block
+            position: relative
+            height: em(100)
+            border: 1px solid $gray
+            padding: $base-margin / 4
+            border-radius: $radius-lg
+            +trans()
+
+            &:hover
+              border-color: $green
+            // end-hover
+
+            .logo
+              display: block
+              position: relative
+              max-width: 80%
+              max-height: em(60)
+              +center(c)
+            // end-logo
+          // end-outer
+        // end-client
+      // end-clients
+
+      .testimonials
+        .testimonial
+          font-size: em(14)
+          text-align: center
+          margin-bottom: $base-margin / 2
+
+          .quote
+            line-height: rem(17)
+            letter-spacing: rem(0.8)
+            font-style: italic
+            margin-bottom: $base-margin / 4
+
+            &::before
+              content: '“'
+            // end-left-quote
+
+            &::after
+              content: '”'
+            // end-left-quote
+          // end-quote
+
+          .cite
+            line-height: rem(17)
+            letter-spacing: rem(0.8)
+            text-transform: uppercase
+
+            .author
+              display: block
+              color: $green
+            // end-author
+
+            .position
+              display: block
+            // end-position
+          // end-cite
+        // end-testimonial
+      // end-testimonials
+    // end-clients
+
+    &.latest-stories-section
+      background-color: $light-gray
+    // end-latest-stories
+  // end-section
+  .button
+    font-size: em(14)
+    font-weight: 700
+    letter-spacing: rem(0.8)
+    text-transform: uppercase
+    border-radius: $radius-sm
+    display: inline-block
+    width: auto
+// end-l-landing

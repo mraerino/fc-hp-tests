@@ -1,0 +1,297 @@
+// ====================================================================
+// ==  @l-ssp  ==
+// ====================================================================
+
+.l-ssp
+  // ==  $page-header  ==
+  .page-header
+    position: relative
+  // end-page-header
+
+  // ==  $page-hero  ==
+  .page-hero
+    background-size: cover
+    background-repeat: no-repeat
+
+    > .inner
+      height: em(390)
+
+      .content
+        .intro
+          .title
+            color: $light
+            text-transform: uppercase
+          // end-title
+        // end-intro
+
+        .signature
+          text-align: right
+        // end-signature
+      // end-content
+    // end-inner
+  // end-page-hero
+
+  // ==  $page-section  ==
+  .page-section
+    .section-title
+      font-weight: 300
+      letter-spacing: 1.8px
+      color: $light
+      position: relative
+      padding-left: $base-margin / 2
+      margin-bottom: $base-margin / 2
+
+      &::before
+        content: ''
+        display: inline-block
+        position: absolute
+        +size(rem(6) 100%)
+        left: 0
+        background-color: $light
+      // end-border
+    // end-section-title
+
+    &.latest-stories-section
+      background-color: $lighter-gray
+      text-align: left
+      padding: 0
+      position: relative
+      height: em(400)
+
+      .box
+        position: relative
+        top: - $base-margin * 2
+      // end-box
+    // end-latest-stories
+
+    &.ssp-about-section
+      text-align: left
+      background-color: $ssp-green
+      color: $light
+
+      p
+        font-size: em(14)
+        line-height: rem(22)
+      // end-p
+
+      .who-we-are
+        margin-bottom: $base-margin
+      // end-who-we-are
+
+      .team-photo
+        height: em(245)
+        +fluid-bg()
+        border-radius: $radius-sm
+        margin-bottom: $base-margin
+      // end-team-photo
+
+      .our-mission
+        .contact
+          text-align: center
+
+          .label
+            font-size: em(26)
+            font-weight: 300
+            color: $light
+            margin-bottom: $base-margin / 2
+          // end-label
+
+          .button
+            border-radius: $radius-sm
+            text-transform: uppercase
+            font-size: em(20)
+            background-color: $light
+            color: $ssp-green
+            display: inline-block
+            width: auto
+
+            .icon
+              display: inline-block
+              +size(rem(26))
+              vertical-align: bottom
+              margin-right: $base-margin / 4
+              +shadow-box()
+
+              svg
+                +size(100%)
+              // end-svg
+            // end-icon
+          // end-button
+        // end-contact
+      // end-our-mission
+
+      .meet-team
+        .team
+          margin-bottom: $base-margin
+
+          .team-member
+            position: relative
+            padding-left: rem(100) + $base-margin / 2
+
+            .photo
+              +size(em(100))
+              background-color: $light
+              border-radius: 50%
+              padding: 5px
+              position: absolute
+              left: 0
+
+              img
+                +size(100%)
+                border-radius: 50%
+              // end-img
+            // end-photo
+
+            .details
+              font-size: em(18)
+              font-family: $oswald
+              height: rem(100)
+
+              .parts
+                position: relative
+                +center(y)
+
+                .part
+                  display: block
+                  margin-bottom: $base-margin / 8
+                  letter-spacing: 1px
+
+                  &.name
+                    text-transform: uppercase
+                  // end-name
+
+                  &.position
+                    font-weight: 300
+                    text-transform: capitalize
+                  // end-position
+                // end-part
+              // end-parts
+            // end-details
+          // end-team-member
+        // end-team
+
+        .contact
+          text-align: center
+
+          .title
+            font-size: em(26)
+            font-weight: 300
+            color: $light
+            margin-bottom: $base-margin / 4
+          // end-title
+
+          .details-nav
+            .list
+              .item
+                display: inline-block
+                margin-right: $base-margin / 2
+                font-family: $oswald
+                font-weight: 300
+                letter-spacing: 1px
+
+                &:last-child
+                  margin-right: 0
+                // end-last
+
+                a
+                  color: $light
+
+                  .icon
+                    margin-right: $base-margin / 4
+                  // end-icon
+                // end-a
+              // end-item
+            // end-list
+          // end-details-nav
+        // end-contact
+      // end-meet-team
+    // end-ssp-about-section
+
+    &.project-progress-section
+      background-image: url(../images/pattern-plus.svg)
+      background-position: center
+      background-color: $light
+
+      .section-title
+        color: $dark
+        text-align: left
+
+        &::before
+          background-color: $ssp-green
+        // end-border
+      // end-section-title
+
+      .steps
+        .step
+          padding: $base-margin / 2
+          background-color: $light
+          border: 1px solid $gray
+          border-radius: $radius-sm
+
+          .header
+            margin-bottom: $base-margin / 4
+
+            .icon
+              display: inline-block
+              height: em(35)
+              margin-bottom: $base-margin / 2
+            // end-icon
+
+            .title
+              font-size: em(18)
+              text-transform: uppercase
+            // end-title
+          // end-header
+
+          .description
+            font-size: em(14)
+            line-height: rem(22)
+            color: $gray
+          // end-description
+
+          .count
+            font-size: em(32)
+            margin-top: $base-margin / 2
+          // end-count
+        // end-step
+      // end-steps
+    // end-project-progress-section
+
+    &.supporters-section
+      padding-bottom: $base-margin / 2
+      text-align: left
+
+      .section-title
+        color: $dark
+
+        &::before
+          background-color: $ssp-green
+        // end-border
+      // end-section-title
+
+      .intro
+        font-family: $oswald
+        font-size: em(14)
+        font-weight: 300
+        text-align: center
+        margin-bottom: $base-margin / 2
+      // end-intro
+
+      .supporters-nav
+        text-align: center
+
+        .list
+          .item
+            display: inline-block
+            margin-right: $base-margin / 2
+            margin-bottom: $base-margin / 2
+
+            &:last-child
+              margin-right: 0
+            // end-last
+          // end-item
+        // end-list
+      // end-nav
+    // end-supporters-section
+  // end-section
+// end-l-ssp

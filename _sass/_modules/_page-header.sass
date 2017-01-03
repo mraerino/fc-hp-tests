@@ -1,0 +1,49 @@
+// ====================================================================
+// ==  @page-header  ==
+// ====================================================================
+
+.page-header
+  position: absolute
+  width: 100%
+  z-index: 9999
+
+  .header-content
+    padding-top: $base-margin / 2
+    padding-bottom: $base-margin / 2
+  // end-content
+
+  .header-history
+    padding-top: $base-margin / 4
+    padding-bottom: $base-margin / 4
+    border-top: 1px solid $light-gray
+    border-bottom: 1px solid $light-gray
+    display: none
+
+    > .inner
+      .history-nav
+        .list
+          .item
+            display: inline-block
+
+            a
+              font-size: em(12)
+            // end-a
+
+            .icon
+              font-size: em(10)
+              color: $green
+              margin-left: $base-margin / 4
+              margin-right: $base-margin / 4
+            // end-icon
+
+            &:last-child
+              .icon
+                display: none
+              // end-icon
+            // end-last
+          // end-item
+        // end-list
+      // end-nav
+    // end-inner
+  // end-history
+// end-page-header

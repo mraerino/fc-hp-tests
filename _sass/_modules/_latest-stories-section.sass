@@ -1,0 +1,113 @@
+// ====================================================================
+// ==  @latest-stories-section  ==
+// ====================================================================
+
+.latest-stories-section
+  // ==  $reusable-class-names  ==
+  .story-infos
+    .title
+      font-weight: 300
+      margin-bottom: $base-margin / 4
+      +trans()
+
+      &:hover
+        color: $ssp-green
+      // end-hover
+    // end-title
+
+    .date
+      color: $gray
+      font-size: em(12)
+      text-transform: uppercase
+      line-height: normal
+
+      .icon
+        margin-right: $base-margin / 4
+        vertical-align: middle
+        display: inline-block
+        +size(rem(16))
+
+        svg
+          g
+            fill: $gray
+          // end-g
+        // end-svg
+      // end-icon
+    // end-date
+  // end-story-infos
+  // end-reusable-class-names
+
+  .stories-title
+    font-size: em(28)
+    font-weight: 300
+    margin-bottom: $base-margin / 2
+    text-transform: uppercase
+  // end-stories-title
+
+  .box
+    position: relative
+    background-color: $light
+    border-radius: $radius-sm
+    text-align: left
+    overflow: hidden
+    margin: 0 -($base-margin / 2)
+    padding: $base-margin / 2
+    +shadow-box()
+
+    .week-story
+      .story
+        .story-img
+          +fluid-bg()
+          height: em(230)
+          border-radius: $radius-sm
+          margin-bottom: $base-margin / 2
+        // end-img
+
+        .infos
+          @extend .story-infos
+        // end-infos
+      // end-story
+    // end-week-story
+
+    .latest-stories
+      .stories-nav
+        margin-bottom: $base-margin / 2
+
+        .list
+          .item
+            margin-bottom: $base-margin / 4
+
+            .infos
+              @extend .story-infos
+              border: 1px solid $gray
+              border-radius: $radius-sm
+              padding: $base-margin / 2
+
+              .title
+              // end-title
+            // end-infos
+          // end-item
+        // end-list
+      // end-stories-nav
+
+      .latest-stories-footer
+        text-align: center
+
+        .link
+          font-family: $oswald
+          font-weight: 300
+          font-size: em(18)
+          display: inline-block
+
+          &::after
+            background-color: #14C767
+          // end-after
+
+          .icon
+            margin-right: $base-margin / 4
+          // end-icon
+        // end-more
+      // end-footer
+    // end-latest-stories
+  // end-box
+// end-latest-stories-section

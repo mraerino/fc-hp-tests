@@ -1,0 +1,49 @@
+// ====================================================================
+// ==  @l-plans  ==
+// ====================================================================
+
+.l-plans
+  // ==  $reusable-class-names  ==
+  .page-section-intro-outro
+    text-align: center
+
+    .title
+      text-transform: capitalize
+      margin-bottom: $base-margin / 2
+      font-weight: 300
+    // end-title
+  // end-intro-outro
+  // end-reusable-class-names
+
+  // ==  $page-hero  ==
+  .page-hero
+    .inner
+      height: em(512)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: left
+    // end-inner
+  // end-hero
+
+  // ==  $page-section  ==
+  .page-section
+    padding-top: $base-margin
+    padding-bottom: $base-margin
+
+    .section-header
+      @extend .page-section-intro-outro
+    // end-header
+
+    .section-footer
+      @extend .page-section-intro-outro
+
+      .text
+        margin-bottom: $base-margin / 2
+      // end-title
+    // end-footer
+
+    // ==  $coworking-section  ==
+    &.coworking-section
+    // end-section
+  // end-section
+// end-l-plans

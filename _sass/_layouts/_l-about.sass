@@ -1,0 +1,161 @@
+// ====================================================================
+// ==  @l-about  ==
+// ====================================================================
+
+.l-about
+  // ==  $page-header  ==
+  .page-header
+    position: relative
+  // end-page-header
+
+  // ==  $page-hero  ==
+  .page-hero
+    > .inner
+      .content
+        transform: none
+
+        h2
+          font-family: $lato
+          font-weight: 700
+          font-size: $title-lg
+          text-transform: uppercase
+
+          em
+            font-style: normal
+            color: $green
+          // end-em
+        // end-h2
+      // end-content
+    // end-inner
+  // end-page-hero
+
+  // ==  $page-section  ==
+  .page-section
+    text-align: left
+    font-size: 14px
+    padding-left: $base-margin / 2
+    padding-right: $base-margin / 2
+
+    .section-title
+      color: $green
+      margin-bottom: $base-margin / 2
+      font-size: 24px
+    // end-title
+
+    &.intro-section
+      overflow: hidden
+
+      p
+        margin-bottom: $base-margin / 2
+      // end-p
+
+      .right
+        font-size: 20px
+
+        .text
+          text-align: center
+
+          p
+            line-height: 1.7rem
+          // end-p
+        // end-text
+      // end-right
+    // end-intro
+
+    &.about-section
+      padding-bottom: 0
+
+      .section-title
+        color: $gray
+      // end-title
+
+      .intro
+        margin-bottom: $base-margin
+
+        .text
+          margin-bottom: $base-margin
+        // end-text
+
+        &.no-cta
+          .cta
+            display: none
+          // end-cta
+        // end-no-cta
+      // end-intro
+
+      .highlight
+        background-color: $lighter-gray
+        padding-top: $base-margin
+        padding-bottom: $base-margin
+
+        .lead
+          margin-bottom: $base-margin / 2
+          font-weight: 300
+          font-size: em(26)
+          line-height: rem(46)
+        // end-lead
+
+        &.no-cta
+          .lead
+            margin-bottom: 0
+          // end-lead
+
+          .cta
+            display: none
+          // end-cta
+        // end-no-cta
+      // end-highlight
+    // end-about-section
+
+    &.team-section
+
+      .team
+        .team-member
+          text-align: left
+          position: relative
+          margin-bottom: $base-margin
+
+          &:last-child
+            margin-bottom: 0
+          // end-last
+
+          .profile
+            position: absolute
+            left: 0
+            top: 0
+
+            .photo
+              display: inline-block
+              +size(em(120))
+              background-repeat: no-repeat
+              background-position: center
+              background-size: cover
+              border-radius: em(60)
+            // end-photo
+          // end-profile
+
+          .details
+            padding-left: rem(120) + $base-margin / 2
+
+            .name
+              text-transform: capitalize
+              margin-bottom: em(5)
+            // end-name
+
+            .position
+              text-transform: capitalize
+              color: $gray
+              margin-bottom: em(5)
+            // end-position
+
+            .desc
+              .highlight
+                font-weight: 700
+              // end-highlight
+            // end-desc
+          // end-details
+        // end-member
+      // end-team
+    // end-team
+  // end-page-section
+// end-l-about

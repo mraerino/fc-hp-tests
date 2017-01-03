@@ -1,0 +1,50 @@
+// ====================================================================
+// ==  @select-checkbox  ==
+// ====================================================================
+
+.select-checkbox
+  display: inline-block
+  height: rem(20)
+  line-height: rem(20)
+  cursor: pointer
+  +user-select(none)
+
+  .checkbox-button
+    position: relative
+    display: inline-block
+    +size(em(20))
+    margin-right: em(10)
+    vertical-align: middle
+    margin-top: em(-2)
+
+    .checkbox
+      appearance: none
+      display: block
+      +size(100%)
+      border: 2px solid $green
+      border-radius: 50%
+      cursor: pointer
+
+      &:checked
+        & ~ .check
+          display: block
+        // end-check
+      // end-checked
+    // end-checkbox
+
+    .check
+      display: none
+      +size(100%)
+      position: absolute
+      top: 0
+      left: 0
+      border-radius: 50%
+      background-color: $green
+      color: $light
+      text-align: center
+      font-size: em(14)
+      +trans()
+      +animation(grow 500ms $ease-out-quad)
+    // end-check
+  // end-checkbox-button
+// end-select-checkbox

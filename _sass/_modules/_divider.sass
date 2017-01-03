@@ -1,0 +1,66 @@
+// ====================================================================
+// ==  @divider  ==
+// ====================================================================
+
+.divider
+  border: none
+  border-bottom: 1px solid $light-gray
+  margin-right: auto
+  margin-left: auto
+
+  &.divider-or
+    &::after
+      content: 'or'
+      display: inline-block
+      background-color: $light
+      padding-right: em(8)
+      padding-left: em(8)
+      color: $light-gray
+      font-family: $oswald
+      font-weight: 300
+      +center(y)
+    // end-or
+  // end-divider-or
+
+  &.small-margin
+    margin-top: $base-margin / 2
+    margin-bottom: $base-margin / 2
+
+    &.top
+      margin-top: $base-margin / 2
+      margin-bottom: 0
+    // end-top
+
+    &.bottom
+      margin-top: 0
+      margin-bottom: $base-margin / 2
+    // end-bottom
+  // end-small-margin
+
+  &.big-margin
+    margin-top: $base-margin
+    margin-bottom: $base-margin
+
+    &.top
+      margin-top: $base-margin
+      margin-bottom: 0
+    // end-top
+
+    &.bottom
+      margin-top: 0
+      margin-bottom: $base-margin
+    // end-bottom
+  // end-big-margin
+
+  &.small
+    width: em(200)
+  // end-small
+
+  &.medium
+    width: em(600)
+  // end-medium
+
+  &.dark
+    border-color: $dark-gray
+  // end-dark
+// end-divider

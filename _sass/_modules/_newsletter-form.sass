@@ -1,0 +1,50 @@
+// ====================================================================
+// ==  @newsletter-form  ==
+// ====================================================================
+
+.newsletter-form
+  .form-group
+    display: inline-block
+    width: rem(380)
+    font-size: 0
+
+    .form-elem
+      display: inline-block
+      background-color: $darker
+      height: rem(40)
+
+      &.input-control
+        width: 75%
+        +border-left-radius($radius-lg)
+        vertical-align: top
+
+        .form-input
+          font-size: rem(14)
+          color: $light
+          display: block
+          +size(100%)
+          padding-left: $base-margin / 2
+        // end-input
+      // end-field
+
+      &.button-control
+        width: 25%
+        +border-right-radius($radius-lg)
+        padding-left: $base-margin / 4
+        padding-right: $base-margin / 4
+        vertical-align: top
+
+        .form-button
+          font-size: rem(16)
+          font-family: $oswald
+          font-weight: 300
+          color: $green
+          position: relative
+          display: block
+          +size(100%)
+          cursor: pointer
+        // end-button
+      // end-button-field
+    // end-elem
+  // end-group
+// end-form

@@ -1,0 +1,152 @@
+// ====================================================================
+// ==  @r-halls  ==
+// ====================================================================
+
+// ==  $halls-lg  ==
++media($bp-halls-lg)
+  .l-halls
+    .about
+      width: 60vw
+    // end-about
+  // end-l-halls
+// end-halls-lg
+
+// ==  $lg  ==
++media($bp-lg)
+  .l-halls
+    .page-header
+      position: absolute
+    // end-page-header
+
+    .about
+      width: 100vw
+    // end-about
+  // end-l-halls
+// end-lg
+
+// ==  $md  ==
++media($bp-md)
+  .l-halls
+    // ==  $slideshow  ==
+    .slideshow
+      > .inner
+        .content
+          .page-title
+            font-size: $title-lg
+          // end-title
+        // end-content
+      // end-inner
+    // end-slideshow
+  // end-l-halls
+// end-md
+
+// ==  $halls-sm  ==
++media($bp-halls-sm)
+  .l-halls
+    // ==  $page-header  ==
+    .page-header
+      .header-social
+        display: none
+      // end-header-social
+    // end-page-header
+
+    .about
+      .about-footer
+        .label
+          text-align: center
+          margin-bottom: $base-margin / 4
+
+          p
+            display: inline
+          // end-p
+        // end-label
+
+        .form
+          text-align: center
+        // end-form
+      // end-about-footer
+    // end-about
+  // end-l-halls
+
+  .g-halls
+    // ==  $page-header  ==
+    .page-header-container
+      .col-logo
+        +span-columns(12)
+        +omega()
+      // end-col
+    // end-container
+
+    // ==  $about-footer  ==
+    .about-footer-container
+      .col-label
+        +span-columns(12)
+        +omega()
+      // end-col
+
+      .col-form
+        +span-columns(12)
+        +omega()
+      // end-form
+    // end-container
+  // end-g-halls
+// end-md
+
+// ==  $sm  ==
++media($bp-sm)
+  .l-halls
+    // ==  $slideshow  ==
+    .slideshow
+      > .inner
+        .content
+          top: 100%
+          +transform(translateY(-100%))
+          padding-bottom: $base-margin / 2
+
+          .page-title
+            font-size: em(48)
+            line-height: rem(50)
+          // end-title
+
+          .slideshow-btns-nav
+            display: none
+          // end-slideshow-btns-nav
+
+          .soon
+            display: block
+          // end-soon
+        // end-content
+      // end-inner
+    // end-slideshow
+
+    .about
+      padding: $base-margin / 2
+
+      .about-header
+        .close
+          top: $base-margin / 2
+          right: $base-margin / 2
+        // end-close
+      // end-about-header
+
+      .about-footer
+        .form
+          .form-group
+            .form-elem
+              display: block
+              margin-bottom: $base-margin / 4
+
+              &:last-child
+                margin-bottom: 0
+              // end-last
+            // end-form-elem
+          // end-form-group
+        // end-form
+      // end-about-footer
+    // end-about
+  // end-l-halls
+// end-sm
+
+// ==  $xs  ==
++media($bp-xs)
+// end-xs

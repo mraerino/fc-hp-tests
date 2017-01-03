@@ -1,0 +1,38 @@
+// ====================================================================
+// ==  @logo  ==
+// ====================================================================
+
+.fc-logo
+  display: inline-block
+  +size(em(80) em(90))
+  background-repeat: no-repeat
+  background-size: cover
+
+  &.light
+    background-image: url(../images/logo-fc-light.svg)
+  // end-white
+
+  &.dark
+    background-image: url(../images/logo-fc-dark.svg)
+  // end-dark
+
+  &.small
+    +size(em(32) em(36))
+
+    &.light
+      background-image: url(../images/logo-fc-small-light.svg)
+    // end-light
+
+    &.dark
+      background-image: url(../images/logo-fc-small-dark.svg)
+    // end-dark
+  // end-small
+// end-logo
+
+.logo-halls
+  display: inline-block
+  +size(em(80) em(110))
+  background-image: url(../images/logo-future-campus.svg)
+  background-repeat: no-repeat
+  background-size: contain
+// end-logo-halls

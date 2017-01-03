@@ -1,0 +1,66 @@
+// ====================================================================
+// ==  @r-page-header  ==
+// ====================================================================
+
+// ==  $lg  ==
++media($bp-lg)
+  .page-header
+    position: relative
+  // end-page-header
+// end-lg
+
+// ==  $ph-md  ==
++media($bp-ph-md)
+  .page-header-container
+    .col-logo
+      +span-columns(12)
+      +omega()
+    // end-logo
+
+    .col-menu
+      +span-columns(12)
+    // end-menu
+  // end-container
+
+  .page-header
+    .inner
+      .header-logo
+        text-align: center
+      // end-logo
+
+      .header-menu
+        text-align: center
+      // end-menu
+    // end-inner
+
+    &.dashboard-header
+      .inner
+        .header-menu
+        // end-menu
+      // end-inner
+    // end-dashboard-header
+  // end-page-header
+// end-ph-md
+
+// ==  $md  ==
++media($bp-md)
+  .page-header
+    .inner
+      .header-logo
+        margin-bottom: $base-margin
+      // end-logo
+
+      .header-menu
+        line-height: normal
+      // end-header-menu
+    // end-inner
+  // end-page-header
+// end-md
+
+// ==  $sm  ==
++media($bp-sm)
+// end-sm
+
+// ==  $xs  ==
++media($bp-xs)
+// end-xs

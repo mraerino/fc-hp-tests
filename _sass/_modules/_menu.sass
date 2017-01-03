@@ -1,0 +1,234 @@
+// ====================================================================
+// ==  @menu  ==
+// ====================================================================
+
+.menu
+  line-height: em(90)
+
+  .list
+    .item
+      display: inline-block
+      margin-right: $menu-items-margin
+      font-size: em(18)
+
+      a
+        text-decoration: none
+        font-family: $oswald
+        font-weight: 300
+        +trans()
+      // end-a
+
+      &:hover
+        a:not(.link)
+          color: $green
+        // end-a
+      // end-hover
+
+      &.buttons,
+      &.langs
+        margin-right: $base-margin / 4
+
+        &:last-of-type
+        // end-last
+      // end-buttons
+
+      a:not(.button, .lang)
+        letter-spacing: 0.8px
+        vertical-align: middle
+        +trans()
+
+        &:hover
+          color: $green
+        // end-hover
+      // end-a
+
+      .button
+        text-transform: uppercase
+        font-family: $lato
+        font-size: rem(10)
+        line-height: normal
+        color: $light
+        padding: $base-margin / 4 $base-margin / 2
+        margin-right: $base-margin / 4
+        vertical-align: middle
+
+        &:last-child
+          margin-right: 0
+        // end-last
+
+        &.green
+          background-color: $green
+
+          &:hover
+            background-color: $dark-green
+          // end-hover
+        // end-green
+
+        &.blue
+          background-color: $ssp-blue
+
+          &:hover
+            background-color: $light-ssp-blue
+          // end-hover
+        // end-blue
+      // end-button
+
+      .lang
+        display: inline-block
+        margin-right: $base-margin / 4
+        vertical-align: middle
+
+        img
+          display: block
+          height: rem(15)
+        // end-img
+
+        &:last-child
+          margin-right: 0
+        // end-last
+      // end-lang
+
+      &:last-child
+        margin-right: 0
+      // end-last
+    // end-item
+  // end-list
+
+  &.small
+    line-height: em(36)
+  // end-small
+
+  &.light
+    .list
+      .item
+        a
+          color: $light
+        // end-a
+
+        &:hover
+          a:not(.link)
+            color: $green
+          // end-a
+        // end-hover
+      // end-item
+    // end-list
+  // end-light
+
+  &.dark
+    .list
+      .item
+        a
+          color: $dark
+        // end-a
+
+        &:hover
+          a:not(.link)
+            color: $green
+          // end-a
+        // end-hover
+      // end-item
+    // end-list
+  // end-dark
+
+  &.dashboard-menu
+    .list
+      .item
+        font-size: em(16)
+        margin-right: $base-margin / 2
+
+        &:last-child
+          margin-right: 0
+        // end-last
+
+        a
+          font-family: $lato
+          font-weight: 400
+          padding-top: $base-margin / 2
+          padding-bottom: $base-margin / 2
+          display: inline-block
+          position: relative
+
+          &::after
+            content: ''
+            display: block
+            width: 0%
+            height: em(4)
+            background-color: $green
+            position: absolute
+            bottom: em(-2)
+            +center(x)
+            +trans()
+          // end-line
+
+          &:hover
+            &::after
+              width: 100%
+            // end-line
+          // end-hover
+        // end-a
+
+        &.active
+          a
+            font-weight: 700
+
+            &::after
+              width: 100%
+            // end-line
+          // end-a
+        // end-active
+      // end-item
+    // end-list
+  // end-dashboard-menu
+
+  &.footer-menu
+    line-height: normal
+    text-align: center
+
+    .list
+      .item
+        a
+        // end-a
+      // end-item
+    // end-list
+  // end-main
+
+  &.menu-small
+    line-height: normal
+
+    .list
+      .item
+        font-size: em(12)
+        margin-right: $base-margin / 2
+
+        &:last-child
+          margin-right: 0
+        // end-last
+
+        a
+          font-family: $lato
+          text-decoration: underline
+        // end-a
+      // end-item
+    // end-list
+
+    &.primary
+      .list
+        .item
+          a
+            color: $gray
+          // end-a
+        // end-item
+      // end-list
+    // end-primary
+
+    &.secondary
+      .list
+        .item
+          a
+            color: $dark-gray
+          // end-a
+        // end-item
+      // end-list
+    // end-secondary
+  // end-small
+// end-menu

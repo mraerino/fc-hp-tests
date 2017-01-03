@@ -1,0 +1,53 @@
+// ====================================================================
+// ==  @base  ==
+// ====================================================================
+
+body
+  color: $dark
+  font-family: $lato
+
+  *
+    margin: 0
+    padding: 0
+  // end-all
+// end-body
+
+@for $i from 1 through 6
+  h#{$i}
+    font-family: $oswald
+    font-weight: 400
+    color: $dark
+
+    @if $i == 1
+      font-size: $title-lg
+    @if $i == 2
+      font-size: $title-md
+    @if $i == 3
+      font-size: $title-sm
+    @if $i == 4
+      font-size: $title-xs
+    @else
+// end-headings
+
+$a-list: link active focus hover visited
+@each $stat in $a-list
+  a:#{$stat}
+    color: $dark
+    text-decoration: none
+// end-links
+
+ul
+  list-style: none
+// end-ul
+
+input,
+textarea,
+button
+  border: none
+  outline: none
+  background-color: transparent
+// end-form-elements
+
+p
+  line-height: $p-lh
+// end-p

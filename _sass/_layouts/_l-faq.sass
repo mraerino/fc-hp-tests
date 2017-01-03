@@ -1,0 +1,71 @@
+// ====================================================================
+// ==  @l-faq  ==
+// ====================================================================
+
+.l-faq
+  // ==  $page-hero  ==
+  .page-hero
+  // end-page-hero
+
+  // ==  $page-main  ==
+  .page-main
+    .page-section
+      &.faq-more-section
+        .page
+          text-align: left
+          padding-left: $base-margin / 2
+
+          .page-title
+            text-transform: uppercase
+            letter-spacing: 1.7px
+            margin-bottom: $base-margin
+          // end-title
+
+          .section
+            margin-bottom: $base-margin / 2
+
+            &:last-child
+              margin-bottom: 0
+            // end=last
+
+            .section-title
+              margin-bottom: $base-margin / 2
+              color: $green
+            // end-section-title
+
+            .question
+              margin-bottom: $base-margin / 2
+
+              &:last-child
+                margin-bottom: 0
+              // end=last
+
+              .question-title
+                margin-bottom: $base-margin / 4
+              // end-question-title
+
+              .subtitle
+                color: $orange
+
+                &.black
+                  color: $dark
+                  text-transform: uppercase
+                  font-weight: 700
+                // end-black
+              // end-subtitle
+
+              a
+                color: $green
+                +trans()
+
+                &:hover
+                  color: $dark
+                // end-hover
+              // end-a
+            // end-question
+          // end-section
+        // end-page
+      // end-faq-more
+    // end-page-section
+  // end-page-main
+// end-l-faq

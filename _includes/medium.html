@@ -1,0 +1,45 @@
+<div class="latest-stories-container wide-width">
+    <div class="box" ng-controller="StoriesCtrl" ng-init="stories.getStories('{{ username }}')">
+        <div class="week-story col">
+            <h2 class="stories-title">{{ cms.globalsettings.medium_left_heading }}</h2>
+
+            <div class="story">
+                <div class="story-img">
+                    <img src="{% raw %}{{ stories.ofTheWeek.imageUrl }}{% endraw %}" alt="">
+                </div> <!-- end-img -->
+                <div class="infos">
+                    <a href="{% raw %}{{ stories.ofTheWeek.url }}{% endraw %}" target="_blank"><h4 class="title">{% raw %}{{ stories.ofTheWeek.title }}{% endraw %}</h4></a>
+                    <p class="date">
+                        <span class="icon" ng-include="'static/images/icon-time.svg'"></span>
+                        posted {% raw %}{{ stories.ofTheWeek.date }}{% endraw %}
+                    </p> <!-- end-date -->
+                </div> <!-- end-infos -->
+            </div> <!-- end-story -->
+        </div> <!-- end-week-story -->
+
+        <div class="latest-stories col">
+            <h2 class="stories-title">{{ cms.globalsettings.medium_right_heading }}</h2>
+
+            <nav class="stories-nav">
+                <ul class="list">
+                    <li class="item" ng-repeat="story in stories.latest|limitTo:3">
+                        <div class="infos">
+                            <a ng-href="{% raw %}{{ story.url }}{% endraw %}" target="_blank"><h4 class="title">{% raw %}{{ story.title }}{% endraw %}</h4></a>
+                            <p class="date">
+                                <span class="icon" ng-include="'static/images/icon-time.svg'"></span>
+                                posted {% raw %}{{ story.date }}{% endraw %}
+                            </p> <!-- end-date -->
+                        </div> <!-- end-infos -->
+                    </li> <!-- end-item -->
+                </ul> <!-- end-list -->
+            </nav> <!-- end-stories-nav -->
+
+            <footer class="latest-stories-footer">
+                <a href="https://medium.com/@{{ username }}/latest" class="link has-icon" target="_blank">
+                    <span class="icon" ng-include="'static/images/logo-medium.svg'"></span>
+                    More stories
+                </a> <!-- end-more -->
+            </footer> <!-- end-footer -->
+        </div> <!-- end-latest-stories -->
+    </div> <!-- end-box -->
+</div>
