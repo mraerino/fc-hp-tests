@@ -1,11 +1,11 @@
 ---
 layout: landing
-
 about_cta_link: "/team"
 about_cta_text: learn more about us
-about_paragraph: >
-  Our aim is to provide an innovative, inspiring, and laid back environment
+about_paragraph: 'Our aim is to provide an innovative, inspiring, and laid back environment
   for businesses of all shapes and sizes to learn, grow, and flourish.
+
+'
 banner_text: ''
 clients:
 - image: http://lh3.googleusercontent.com/CRjMVC1KK4LuaL80lCwLi-0_S8hDCErmB48NMIeIAgqPRM9Vb7TeV2F5WfeDg_ypm7_idPsOLLntI7x5iFYFCXfuj4bP
@@ -46,37 +46,40 @@ clients_testimonials:
 - company: axa
   full_name: john doe
   position: vp
-  text: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est ante,
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est ante,
     pellentesque nec facilisis at, fringilla ut dui. Proin vulputate purus orci, vehicula
     auctor urna vehicula nec. Duis et mi consectetur.
+
+'
 - company: netlify
   full_name: jane doe
   position: fe engineer
-  text: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est ante,
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est ante,
     pellentesque nec facilisis at, fringilla ut dui. Proin vulputate purus orci, vehicula
     auctor urna vehicula nec. Duis et mi consectetur.
+
+'
 - company: ubisoft
   full_name: jack doe
   position: ui engineer
-  text: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est ante,
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est ante,
     pellentesque nec facilisis at, fringilla ut dui. Proin vulputate purus orci, vehicula
     auctor urna vehicula nec. Duis et mi consectetur.
+
+'
 create_date: '2016-12-26T12:27:00+01:00'
 events_jumbotron_background: http://lh3.googleusercontent.com/HQsAMGwv8Fge8r9tSOIQtjm9ZGuCz0pfPrJfwZkd2Y9kc6SdoF9ehDmX0GBiP0agjGoCg6L2ktAXr9bVcSltyz2rl-5A
 events_jumbotron_cta_link: https://factorycampus.typeform.com/to/LyDULG
 events_jumbotron_cta_text: Host your event
-events_jumbotron_text: >
+events_jumbotron_text: |
   From small gatherings to large conferences, barcamps, hackathons, etc. host your next event inside one of Dusseldorf’s coolest event halls.
-
   Set in an old recycling factory, Factory Campus’ unique industrial event halls provide a distinct setup unlike any other.
 events_jumbotron_title: host your event at factory campus
 events_newsletter_heading: Newsletter
-events_newsletter_paragraph: >
-  Sign up to Factory Campus updates to be notified of our
-  latest events, news, and community updates!
+events_newsletter_paragraph: 'Sign up to Factory Campus updates to be notified of
+  our latest events, news, and community updates!
+
+'
 events_section_heading: events
 events_upcoming_cta_link: https://www.facebook.com/pg/factorycampus.de/events/
 events_upcoming_cta_text: Check out our events
